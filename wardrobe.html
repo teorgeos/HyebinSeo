@@ -7,10 +7,10 @@
 <script>document.documentElement.setAttribute('data-lang', localStorage.getItem('lang') || 'en');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Caveat:wght@500;600;700&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="wardrobe-page">
   <nav class="site-nav">
     <div class="site-nav-inner">
       <a class="nav-name" href="index.html">Hyebin Seo</a>
@@ -23,114 +23,183 @@
   </nav>
 
   <div class="detail-shell">
-      <div class="hero"><div>이미지</div></div>
+      <div class="hero"><video autoplay muted loop playsinline src="images/wardrobe/wardrobe(final).MP4"></video></div>
 
       <div class="detail-meta"><span>2026</span><span>·</span><span class="tag"><span class="i18n-ko">AI 비주얼 디렉션</span><span class="i18n-en">AI Visual Direction</span></span></div>
       <h1 class="detail-title"><span class="i18n-ko">모든 것은 옷장에서 시작되었다</span><span class="i18n-en">It All Started from the Wardrobe</span></h1>
 
       <p class="summary">
-        <span class="i18n-ko">AI를 활용한 이미지와 영상 제작이 점점 보편화되는 가운데, 단순히 이미지를 생성하는 것을 넘어 하나의 일관된 비주얼 세계를 기획하고 구현하는 AI Visual Direction 과정을 직접 경험해 보고자 했다. 이 프로젝트는 패션 에디토리얼을 주제로, AI 이미지 생성부터 씬 디자인, 영상 제작까지 전체 AI 프로덕션 파이프라인을 구축하며 진행한 개인 프로젝트이다.</span>
-        <span class="i18n-en">As AI-generated imagery and video become increasingly common, this project moves beyond simply generating images toward AI Visual Direction, planning and building a single coherent visual world. Framed around a fashion editorial, this personal project involved building out an entire AI production pipeline, from image generation to scene design to video production.</span>
+        <span class="i18n-ko">AI를 활용한 이미지와 영상 제작이 점점 보편화되는 가운데, 단순히 이미지를 생성하는 것을 넘어 하나의 일관된 비주얼 세계를 기획하고 구현하는 AI Visual Direction 과정을 직접 경험해 보고자 했다. 이 프로젝트는 패션 에디토리얼을 주제로, AI 이미지 생성부터 씬 디자인, 영상 제작까지 전체 AI 프로덕션 파이프라인을 구축하며 진행한 개인 프로젝트이다. 이 프로젝트를 통해 AI를 더 효율적이고 일관되게 다루면서, 내가 상상하는 것을 빠르고 임팩트 있는 비주얼로 만들어냈다.</span>
+        <span class="i18n-en">As AI-generated imagery and video become increasingly common, this project moves beyond simply generating images toward AI Visual Direction, planning and building a single coherent visual world. Framed around a fashion editorial, this personal project involved building out an entire AI production pipeline, from image generation to scene design to video production. Through this project, I wanted to use AI more efficiently and consistently, turning what I imagined into fast, high-impact visuals.</span>
       </p>
 
       <div class="info-box">
         <div class="info-item"><label><span class="i18n-ko">기간</span><span class="i18n-en">Duration</span></label><span>2026</span></div>
         <div class="info-item"><label><span class="i18n-ko">팀원</span><span class="i18n-en">Team</span></label><span class="i18n-ko">개인 작업</span><span class="i18n-en">Individual project</span></div>
-        <div class="info-item"><label><span class="i18n-ko">역할</span><span class="i18n-en">Role</span></label><span class="i18n-ko">AI 비주얼 디렉션 · 크리에이티브 디렉션 · AI 프로덕션</span><span class="i18n-en">AI Visual Direction · Creative Direction · AI Production</span></div>
-        <div class="info-item"><label><span class="i18n-ko">툴</span><span class="i18n-en">Tools</span></label><span>Midjourney · ComfyUI · RunPod · Kling AI · Nano-Banana</span></div>
+        <div class="info-item"><label><span class="i18n-ko">역할</span><span class="i18n-en">Role</span></label><span class="i18n-ko">AI 아트 디렉션 · 크리에이티브 디렉션 · AI 프로덕션 파이프라인 구축</span><span class="i18n-en">AI Art Direction · Creative Direction · AI Production Pipeline</span></div>
+        <div class="info-item"><label><span class="i18n-ko">툴</span><span class="i18n-en">Tools</span></label><span>Midjourney · ComfyUI · RunPod · Kling AI · Nano-Banana · GPT</span></div>
       </div>
 
-      <section class="story-section" id="concept">
-        <h2 class="section-title"><span class="i18n-ko">컨셉</span><span class="i18n-en">Concept</span></h2>
-        <p class="lead i18n-ko">"내 옷장 속 옷들을 다른 차원의 누군가가 입는다면 어떨까?"</p>
-        <p class="lead i18n-en">"What if someone from another dimension wore the clothes in my wardrobe?"</p>
-        <p class="i18n-ko">이 프로젝트는 아주 단순한 상상에서 시작되었다. 옷장을 현실과 상상이 교차하는 공간으로 바라보며, 미셸 푸코의 헤테로토피아(Heterotopia) 개념에서 영감을 받아 서로 다른 차원의 인물들과 공간을 하나의 패션 에디토리얼로 풀어냈다.</p>
-        <p class="i18n-en">This project began with a very simple thought experiment: the wardrobe as a space where reality and imagination intersect. Drawing on Michel Foucault's concept of heterotopia, it weaves characters and spaces from different dimensions into a single fashion editorial.</p>
-        <p class="i18n-ko">전체적인 비주얼은 현실과 꿈의 경계에 있는 듯한 분위기를 표현하기 위해 파스텔 톤과 몽환적인 무드를 중심으로 디렉팅하였다.</p>
-        <p class="i18n-en">The overall visual direction centered on pastel tones and a dreamlike mood, aiming to capture an atmosphere caught between reality and dream.</p>
-      </section>
-
-      <section class="story-section" id="ai-visual-direction">
-        <h2 class="section-title"><span class="i18n-ko">AI 비주얼 디렉션</span><span class="i18n-en">AI Visual Direction</span></h2>
-        <p class="i18n-ko">이번 프로젝트에서 가장 집중한 부분은 이미지를 생성하는 것보다 비주얼을 디렉팅하는 과정이었다.</p>
-        <p class="i18n-en">The focus of this project was never generating images. It was directing the visuals.</p>
-
-        <h3 class="role-sub-title"><span class="i18n-ko">캐릭터 디자인</span><span class="i18n-en">Character Design</span></h3>
-        <div class="section-image"><span class="i18n-ko">이미지 · 캐릭터 레퍼런스 시트 (Character + Styling = Lookbook)</span><span class="i18n-en">Image · character reference sheet (Character + Styling = Lookbook)</span></div>
-        <p class="i18n-ko">먼저 하나의 모델을 다양한 각도와 거리로 생성해 총 9장의 레퍼런스 시트를 만들고, 흰 배경과 흰 베이스 의상으로 통일해 같은 얼굴과 체형이 유지되는 기준을 세웠다. 이 레퍼런스를 바탕으로 포레스트 그린 피나포어, 크림 레이스 스커트, 네이비 바시티 재킷, 틸 새틴 스커트 등 서로 다른 무드의 스타일링 네 세트를 조합해, 하나의 캐릭터가 네 가지 세계관의 룩을 소화하도록 설계했다.</p>
-        <p class="i18n-en">A single model was generated from various angles and distances, nine reference images in total, with a uniform white background and base outfit establishing a baseline so the same face and build read consistently. Four sets of styling in distinct moods were then combined, a forest green pinafore, a cream lace skirt, a navy varsity jacket, a teal satin skirt, one consistent character carrying the look across four different worlds.</p>
-        <p class="i18n-ko">각 캐릭터마다 인물, 행동, 분위기까지 정의해, 하나의 이미지가 아니라 움직이는 장면을 위한 캐릭터 디렉션을 함께 설계하였다.</p>
-        <p class="i18n-en">Each character was also defined by who they were, what they were doing, and what mood they conveyed, direction designed not just for a single image but for a moving scene.</p>
-
-        <h3 class="role-sub-title"><span class="i18n-ko">씬 & 카메라</span><span class="i18n-en">Scene &amp; Camera</span></h3>
-        <p class="i18n-ko">연출은 화려한 장비보다 자연스러움을 기준으로 삼았다. 모델은 아이폰으로 찍은 듯한 자연스러운 자세와 각도로 서게 했고, 조명도 인공적인 세팅 대신 자연광을 기준으로 설계했다.</p>
-        <p class="i18n-en">Direction was guided by naturalness rather than elaborate equipment. The model stood in casual, iPhone-photo-like poses and angles, each scene lit with natural light instead of an artificial setup.</p>
-        <p class="i18n-ko">컷의 순서와 구도는 사진집을 직접 공부하며 손으로 그린 스토리보드를 바탕으로 미리 정하고 생성했다.</p>
-        <p class="i18n-en">Shot order and composition were planned ahead of time through a hand-drawn storyboard, informed by studying photography books.</p>
-        <div class="section-image"><span class="i18n-ko">이미지 · 손으로 그린 스토리보드</span><span class="i18n-en">Image · hand-drawn storyboard</span></div>
-        <p class="i18n-ko">이후 각 장면이 영상으로 자연스럽게 이어질 수 있도록 모든 배경과 공간을 다시 설계했다. 초기 이미지와 최종 씬은 구성과 분위기가 크게 달라졌으며, 정적인 이미지가 아닌 움직임을 고려한 시네마틱 공간으로 발전시켰다.</p>
-        <p class="i18n-en">Every background and space was then redesigned so each scene could flow naturally into video. The initial images and the final scenes ended up looking very different in composition and mood, evolving from static images into cinematic spaces built with motion in mind.</p>
-        <div class="before-after">
-          <div class="ba-media ba-after"><span class="i18n-ko">최종 씬</span><span class="i18n-en">Final Scene</span></div>
-          <div class="ba-media ba-before"><span class="i18n-ko">초기 이미지</span><span class="i18n-en">Initial Image</span></div>
-          <div class="ba-handle"></div>
-          <span class="ba-label ba-label-before"><span class="i18n-ko">이전</span><span class="i18n-en">Before</span></span>
-          <span class="ba-label ba-label-after"><span class="i18n-ko">이후</span><span class="i18n-en">After</span></span>
-          <input type="range" class="ba-range" min="0" max="100" value="50" aria-label="Before / After slider">
+      <section class="story-section" id="background">
+        <h2 class="section-title"><span class="i18n-ko">배경</span><span class="i18n-en">Background</span></h2>
+        <p class="brief-statement i18n-ko">모든 것은 옷장에서 시작되었다</p>
+        <p class="brief-statement i18n-en">It All Started From the Wardrobe</p>
+        <div class="inspiration-col">
+          <div class="inline-image-small"><img src="images/wardrobe/clothes.jpg" alt="Clothes"></div>
+          <p class="handwritten i18n-ko">빈티지를 좋아하는 사람으로서, 내가 가진 옷들이 어떤 사람이 될 수 있을지 상상하는 데서 이 프로젝트는 시작되었다.</p>
+          <p class="handwritten i18n-en">As a vintage lover, this started from imagining<br>what my own clothes could become on somebody else.</p>
         </div>
       </section>
 
-      <section class="story-section" id="ai-production-pipeline">
-        <h2 class="section-title"><span class="i18n-ko">AI 프로덕션 파이프라인</span><span class="i18n-en">AI Production Pipeline</span></h2>
-        <p class="i18n-ko">이번 프로젝트에서는 하나의 결과물을 만드는 것이 아니라, AI 기반 비주얼 제작 과정을 직접 구축하는 데 집중했다.</p>
-        <p class="i18n-en">Rather than producing a single output, this project focused on building an AI-based visual production process from the ground up.</p>
-        <div class="step-row cols-3">
-          <div class="step-item">
-            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
-            <p class="step-number">01</p>
-            <p class="step-title"><span class="i18n-ko">모델 생성</span><span class="i18n-en">Model</span></p>
+      <section class="story-section" id="creative-brief">
+        <h2 class="section-title"><span class="i18n-ko">크리에이티브 브리프</span><span class="i18n-en">Creative Brief</span></h2>
+        <div class="brief-split">
+          <div class="brief-split-left">
+            <p class="brief-statement i18n-ko">헤테로토피아</p>
+            <p class="brief-statement i18n-en">Heterotopia</p>
           </div>
-          <div class="step-item">
-            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
-            <p class="step-number">02</p>
-            <p class="step-title"><span class="i18n-ko">스타일링 디자인</span><span class="i18n-en">Styling</span></p>
+          <div class="brief-split-right">
+            <p class="i18n-ko">하나의 옷장 안에는 사실 여러 개의 세계가 접혀 있다.<br>같은 서랍에서 나온 옷이라도, 그것을 걸치는 순간 전혀 다른 시간과 공간, 다른 자아로 이어질 수 있다고 생각했다.<br>미셸 푸코가 말한 헤테로토피아, 현실 속에 존재하지만 그 자체로 다른 질서를 가진 공간이라는 개념을 빌려, 하나의 캐릭터가 입는 옷마다 완전히 다른 차원의 무드로 이동하는 패션 에디토리얼을 그렸다.</p>
+            <p class="i18n-en">A single wardrobe folds several worlds inside it. The same drawer can hold clothes that, the moment they're worn, pull you into a completely different time, space, even self. Borrowing Michel Foucault's heterotopia, a space that exists within reality but runs on its own separate order, this editorial follows one character who shifts into an entirely different dimension with every outfit. Dreamy, uncanny, suspended somewhere in-between, and quietly nostalgic.</p>
+            <p class="i18n-ko">몽환적이고 낯설고, 동시에 어딘가 그리운 정서.</p>
           </div>
-          <div class="step-item">
-            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
-            <p class="step-number">03</p>
-            <p class="step-title"><span class="i18n-ko">모델과 의상 합성</span><span class="i18n-en">Composition</span></p>
+        </div>
+
+        <div class="ref-split">
+          <div class="ref-split-left">
+            <p class="i18n-ko">레퍼런스는 전부 영화에서 가져왔다.<br><그랜드 부다페스트 호텔>의 대칭적이고 채도 높은 프레이밍, <트루먼 쇼>의 인공적으로 완벽한 하늘과 세트, <that '70s show>의 촌스럽지만 사랑스러운 빈티지 인테리어, <10 things i hate about you>의 발랄한 하이틴 무드까지, 전부 '누군가 만들어놓은 세계 속에 있다는 느낌'을 공유한다.</p>
+            <p class="i18n-en">The references are all films: The Grand Budapest Hotel for its symmetrical, saturated framing, The Truman Show for its too-perfect sky and stage-built world, That '70s Show for its lovably dated vintage interiors, 10 Things I Hate About You for its bright, hyper-real teen mood.<br>What they share is the feeling of standing inside a world someone else built.</p>
+            <p class="i18n-ko keyword-line"><span class="keyword-label">키워드</span> <span class="keyword-chip">artificial sky</span> <span class="keyword-chip">kitsch</span> <span class="keyword-chip">staged nostalgia</span> <span class="keyword-chip">vintage</span> <span class="keyword-chip">grainy</span></p>
+            <p class="i18n-en keyword-line"><span class="keyword-label">Keywords</span> <span class="keyword-chip">artificial sky</span> <span class="keyword-chip">kitsch</span> <span class="keyword-chip">staged nostalgia</span> <span class="keyword-chip">vintage</span> <span class="keyword-chip">grainy</span></p>
           </div>
-          <div class="step-item">
-            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
-            <p class="step-number">04</p>
-            <p class="step-title"><span class="i18n-ko">씬 및 공간 디렉팅</span><span class="i18n-en">Scene Direction</span></p>
-          </div>
-          <div class="step-item">
-            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
-            <p class="step-number">05</p>
-            <p class="step-title"><span class="i18n-ko">캐릭터 행동 및 콘셉트 설계</span><span class="i18n-en">Motion Direction</span></p>
-          </div>
-          <div class="step-item">
-            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
-            <p class="step-number">06</p>
-            <p class="step-title"><span class="i18n-ko">AI 영상 제작</span><span class="i18n-en">AI Video</span></p>
+          <div class="ref-split-right">
+            <div class="ref-grid">
+              <div class="ref-grid-item"><img src="images/wardrobe/Refer1.jpg" alt="The Grand Budapest Hotel"><p class="ref-caption">The Grand Budapest Hotel</p></div>
+              <div class="ref-grid-item"><img src="images/wardrobe/Refer2.jpg" alt="The Truman Show"><p class="ref-caption">The Truman Show</p></div>
+              <div class="ref-grid-item"><img src="images/wardrobe/Refer4.webp" alt="That '70s Show"><p class="ref-caption">That '70s Show</p></div>
+              <div class="ref-grid-item"><img src="images/wardrobe/refer6.png" alt="10 Things I Hate About You"><p class="ref-caption">10 Things I Hate About You</p></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="story-section" id="result">
+      <section class="story-section" id="results">
+        <p class="eyebrow i18n-ko">필름</p>
+        <p class="eyebrow i18n-en">Films</p>
         <h2 class="section-title"><span class="i18n-ko">다른 차원이 하나의 장면이 되다</span><span class="i18n-en">Different Dimensions, One Scene</span></h2>
-        <p class="i18n-ko">최종적으로 서로 다른 차원을 살아가는 인물들을 하나의 패션 에디토리얼로 구현하고, 이를 AI 영상을 통해 확장하였다.</p>
-        <p class="i18n-en">In the end, characters living across different dimensions came together into a single fashion editorial, extended further through AI-generated video.</p>
-        <p class="i18n-ko">이 프로젝트는 AI를 단순한 생성 도구가 아니라, 여러 AI 툴을 연결해 하나의 비주얼 언어와 스토리를 설계하는 AI Visual Direction으로 다뤘다.</p>
-        <p class="i18n-en">This project treats AI not as a simple generation tool, but as a set of tools connected together to design a single visual language and story, an AI Visual Direction project.</p>
-        <div class="video-embed"><span class="i18n-ko">영상 1</span><span class="i18n-en">Video 1</span></div>
-        <div class="video-embed"><span class="i18n-ko">영상 2</span><span class="i18n-en">Video 2</span></div>
+        <p class="i18n-ko">같은 헤테로토피아 컨셉을 두 가지 방식으로 풀었다.<br>하나는 여러 장면을 넘나들며 상상 속 비현실적인 요소들을 그대로 살린 멀티 씬 컷이고, 다른 하나는 한 장면에 집중해 현실적인 움직임으로 완성한 싱글 씬 컷이다.</p>
+        <p class="i18n-en">The same heterotopia concept, told two ways.<br>One is a multi-scene cut that jumps between spaces, keeping the unreal, imaginative elements intact. The other is a single-scene cut, focused on one moment and played straight, realistic.</p>
+        <div class="result-videos">
+          <div>
+            <video src="images/wardrobe/wardrobe(final).MP4" autoplay muted loop playsinline controls></video>
+            <p class="result-video-label"><span class="i18n-ko">멀티 씬 컷</span><span class="i18n-en">Multi-Scene Cut</span></p>
+          </div>
+          <div>
+            <video src="images/makethings/AI video/5.MP4" autoplay muted loop playsinline controls></video>
+            <p class="result-video-label"><span class="i18n-ko">싱글 씬 컷</span><span class="i18n-en">Single-Scene Cut</span></p>
+          </div>
+        </div>
+        <p class="i18n-ko">인스타그램에 두 버전을 각각 올려본 결과, "Before You Walk Out My Life"에 맞춰 스토리라인을 잡은 싱글 씬 컷의 조회수가 약 6배 더 높았다.<br>예술적으로 화려한 것보다, 누구나 쉽게 이해할 수 있는 콘텐츠를 만드는 것이 더 중요하다는 걸 알 수 있었다.</p>
+        <p class="i18n-en">Posted side by side on Instagram, the single-scene cut, timed to "Before You Walk Out My Life" with a clearer storyline, earned roughly 6x the views.<br>It turned out that making content anyone could easily understand mattered more than making something artistic.</p>
+      </section>
+
+      <section class="story-section" id="process">
+        <h2 class="section-title"><span class="i18n-ko">프로세스</span><span class="i18n-en">Process</span></h2>
+        <p class="brief-statement i18n-ko">AI 파이프라인을 통한 일관성</p>
+        <p class="brief-statement i18n-en">Consistency Through an AI Pipeline</p>
+
+        <h3 class="role-sub-title"><span class="i18n-ko">01 · 캐릭터 시트</span><span class="i18n-en">01 · Character Sheet</span></h3>
+        <p class="i18n-ko">가장 먼저 만든 건 하나의 캐릭터였다.<br>내 옷장을 떠올렸을 때 나오는 이미지는 스포티하면서도 어딘가 내향적인, 살짝 빈티지한 무드의 사람이었다.<br>그 인상을 하나의 얼굴과 체형으로 고정하기 위해 흰 배경과 흰 베이스 의상을 기준으로 9컷의 각도와 표정을 뽑아 캐릭터 시트를 만들었고, 이후 모든 컷에서 이 시트를 기준으로 얼굴과 비율을 맞췄다.</p>
+        <p class="i18n-en">The first thing built wasn't a scene, it was a person.<br>My wardrobe reads sporty, a little introverted, quietly vintage, so that's the character locked in: one face, one build, fixed across 9 angles and expressions against a plain white background and base outfit.<br>Every shot after this used the sheet as the anchor for face and proportion.</p>
+        <div class="section-image-natural size-2-3"><img src="images/wardrobe/model.png" alt="Character reference sheet, 9 angles"></div>
+
+        <h3 class="role-sub-title"><span class="i18n-ko">02 · 의상 프롬프팅</span><span class="i18n-en">02 · Clothing</span></h3>
+        <p class="i18n-ko">실제로 갖고 있는 옷들을 기준으로 네 가지 코디를 프롬프트만으로 재구성했다.<br>원단의 광택과 스커트 밑단의 레이스 마감, 상의와 스커트가 겹치는 순서까지 텍스트로 지정해야 했는데, 특히 옷깃 모양과 허리 봉제선 위치, 어깨선의 각도 같은 디테일을 정확히 짚어주지 않으면 실루엣이 무너졌다.<br>옷의 레이어 순서를 안에서 겉까지 명시하는 것도 필수였다.</p>
+        <p class="i18n-en">Four outfits were rebuilt from the clothes I actually own, using prompting alone.<br>Fabric sheen, a skirt's lace hem, even the order layers overlap all had to be spelled out in text.<br>Getting the collar shape, waist seam placement, and shoulder-line angle exactly right mattered most, skip those and the silhouette falls apart.<br>Naming the layering order, innermost piece to outerwear, was non-negotiable too.</p>
+        <div class="detail-images cols-4">
+          <div class="detail-image" style="aspect-ratio: 1 / 1; padding: 12px;"><img src="images/wardrobe/1_cloth.png" alt="Outfit 1"></div>
+          <div class="detail-image" style="aspect-ratio: 1 / 1; padding: 12px;"><img src="images/wardrobe/2_cloth.png" alt="Outfit 2"></div>
+          <div class="detail-image" style="aspect-ratio: 1 / 1; padding: 12px;"><img src="images/wardrobe/3_cloth.png" alt="Outfit 3"></div>
+          <div class="detail-image" style="aspect-ratio: 1 / 1; padding: 12px;"><img src="images/wardrobe/4_cloth.png" alt="Outfit 4"></div>
+        </div>
+
+        <h3 class="role-sub-title"><span class="i18n-ko">03 · 모델 착용샷</span><span class="i18n-en">03 · Model Shots</span></h3>
+        <p class="i18n-ko">완성된 코디를 캐릭터 시트에 입혀 ComfyUI로 착용샷을 만들었다.<br>스튜디오 느낌 대신 아이폰으로 찍은 듯한 자연스러운 구도와 자연광을 기준으로 디렉팅해, 생성 티가 나지 않는 리얼한 톤을 잡았다.</p>
+        <p class="i18n-en">The finished outfits were applied to the character sheet in ComfyUI to generate the wearing shots.<br>Direction leaned toward an iPhone-photo feel over a studio look, natural light, casual framing, so the result reads real rather than generated.</p>
+        <div class="detail-images cols-4">
+          <div class="detail-image detail-image-portrait"><img src="images/wardrobe/1_model.png" alt="Model shot 1"></div>
+          <div class="detail-image detail-image-portrait"><img src="images/wardrobe/2_model.png" alt="Model shot 2"></div>
+          <div class="detail-image detail-image-portrait"><img src="images/wardrobe/3_model.png" alt="Model shot 3"></div>
+          <div class="detail-image detail-image-portrait"><img src="images/wardrobe/4_model.png" alt="Model shot 4"></div>
+        </div>
+
+        <h3 class="role-sub-title"><span class="i18n-ko">04 · 씬 디렉팅</span><span class="i18n-en">04 · Scene Direction</span></h3>
+        <p class="i18n-ko">같은 공간이지만 네 가지 다른 세계처럼 보이도록, 미드저니 무드보드를 기반으로 네 개의 씬을 만들었다.<br>색감과 소품, 분위기를 각각 다르게 잡아 하나의 공간 안에 여러 질서가 공존한다는 헤테로토피아 개념을 시각적으로 드러냈다.<br>이후 영상으로 자연스럽게 이어지도록 불필요한 소품과 잡음을 제거한 배경으로 다시 정리했다.</p>
+        <p class="i18n-en">Four scenes were built from Midjourney moodboards, same physical space, styled to feel like four different worlds.<br>Color, props, and mood were each pushed in a different direction, a visual way of saying the heterotopia idea: several orders coexisting inside one space.<br>Backgrounds were then cleaned up, stripped of clutter, so each scene could move naturally once it became video.</p>
+        <p class="i18n-ko">대표 씬을 슬라이더로 비교해볼 수 있고, 오른쪽 썸네일을 클릭하면 다른 씬으로 바뀐다.</p>
+        <p class="i18n-en">The scene on the left is shown with a before/after slider. Click a thumbnail on the right to switch scenes.</p>
+        <div class="feature-swap" id="sceneSwap">
+          <div class="feature-main">
+            <div class="before-after" id="sceneBA">
+              <div class="ba-media ba-after"><img src="images/wardrobe/3_after.png" alt="Scene 3, after"></div>
+              <div class="ba-media ba-before"><img src="images/wardrobe/3_before.png" alt="Scene 3, before"></div>
+              <div class="ba-handle"></div>
+              <span class="ba-label ba-label-before"><span class="i18n-ko">이전</span><span class="i18n-en">Before</span></span>
+              <span class="ba-label ba-label-after"><span class="i18n-ko">이후</span><span class="i18n-en">After</span></span>
+              <input type="range" class="ba-range" min="0" max="100" value="50" aria-label="Before / After slider">
+            </div>
+          </div>
+          <div class="feature-thumbs">
+            <button class="feature-thumb" data-before="images/wardrobe/1_before.png" data-after="images/wardrobe/1_after.png"><img src="images/wardrobe/1_after.png" alt="Scene 1"></button>
+            <button class="feature-thumb" data-before="images/wardrobe/2_before.png" data-after="images/wardrobe/2_after.png"><img src="images/wardrobe/2_after.png" alt="Scene 2"></button>
+            <button class="feature-thumb active" data-before="images/wardrobe/3_before.png" data-after="images/wardrobe/3_after.png"><img src="images/wardrobe/3_after.png" alt="Scene 3"></button>
+            <button class="feature-thumb" data-before="images/wardrobe/4_before.png" data-after="images/wardrobe/4_after.png"><img src="images/wardrobe/4_after.png" alt="Scene 4"></button>
+          </div>
+        </div>
+
+        <h3 class="role-sub-title"><span class="i18n-ko">05 · 모션</span><span class="i18n-en">05 · Motion</span></h3>
+        <p class="i18n-ko">정리된 배경 위에 캐릭터마다 정해둔 동작을 ComfyUI와 나노바나나로 더했다.<br>정지된 장면이 아니라, 다음 순간 무엇을 할지 알 수 있는 순간을 잡는 데 집중했다.</p>
+        <p class="i18n-en">On top of the cleaned backgrounds, ComfyUI and Nano-Banana added a specific motion for each character.<br>The goal wasn't a static pose. It was catching a moment that hints at what happens next.</p>
+        <div class="detail-images cols-4">
+          <div class="detail-image" style="aspect-ratio: 16 / 9;"><img src="images/wardrobe/1_motion.png" alt="Motion 1"></div>
+          <div class="detail-image" style="aspect-ratio: 16 / 9;"><img src="images/wardrobe/2_motion.png" alt="Motion 2"></div>
+          <div class="detail-image" style="aspect-ratio: 16 / 9;"><img src="images/wardrobe/3_motion.png" alt="Motion 3"></div>
+          <div class="detail-image" style="aspect-ratio: 16 / 9;"><img src="images/wardrobe/4_motion.png" alt="Motion 4"></div>
+        </div>
+
+        <h3 class="role-sub-title"><span class="i18n-ko">06 · 영상 제작</span><span class="i18n-en">06 · Video Output</span></h3>
+        <p class="i18n-ko">이 동작들을 클링(Kling AI)으로 영상화했다.<br>네 개의 씬 모두 같은 캐릭터, 같은 공간이지만 완전히 다른 세계처럼 보이도록 만든 결과물이다.<br>상상이 꽃처럼 피어난다는 의미로, 각 씬의 모션에 맞춰 그 세계와 어울리는 꽃이 함께 피어나도록 연출했다.<br>대표 영상이 왼쪽에 재생되고, 오른쪽 썸네일을 누르면 다른 씬의 영상으로 바뀐다.</p>
+        <p class="i18n-en">Those motions were turned into video with Kling AI, four scenes, same character, same space, each reading like an entirely different world.<br>To carry the idea that imagination blooms, a flower suited to each world blooms in sync with that scene's motion.<br>The main video plays on the left, click a thumbnail on the right to switch scenes.</p>
+        <div class="feature-swap" id="videoSwap">
+          <div class="feature-main">
+            <video id="videoMain" src="images/makethings/AI video/1.mp4" autoplay muted loop playsinline controls></video>
+          </div>
+          <div class="feature-thumbs">
+            <button class="feature-thumb active" data-video="images/makethings/AI video/1.mp4"><video src="images/makethings/AI video/1.mp4" muted playsinline preload="metadata"></video></button>
+            <button class="feature-thumb" data-video="images/makethings/AI video/2.mp4"><video src="images/makethings/AI video/2.mp4" muted playsinline preload="metadata"></video></button>
+            <button class="feature-thumb" data-video="images/makethings/AI video/3.mp4"><video src="images/makethings/AI video/3.mp4" muted playsinline preload="metadata"></video></button>
+            <button class="feature-thumb" data-video="images/makethings/AI video/4.mp4"><video src="images/makethings/AI video/4.mp4" muted playsinline preload="metadata"></video></button>
+          </div>
+        </div>
+
+        <h3 class="role-sub-title"><span class="i18n-ko">07 · 시네마틱</span><span class="i18n-en">07 · Cinematic</span></h3>
+        <p class="i18n-ko">시네마틱 버전은 순서가 조금 달랐다.<br>손으로 그린 스토리보드를 기준으로 GPT에 프레임별로 일관되게 이미지를 생성하도록 시킨 뒤, 그 프레임들을 클링으로 이어 붙여 영상을 만들었다.<br>이 페이지 맨 위에서 재생되는 영상이 바로 그 결과물이다.</p>
+        <p class="i18n-en">The cinematic version worked in a different order.<br>GPT generated each frame consistently based on a hand-drawn storyboard, then Kling stitched those frames into motion.<br>That's the video autoplaying at the top of this page.</p>
+        <div class="cinema-compare">
+          <div>
+            <div class="cinema-compare-item"><img src="images/wardrobe/storyboard_cinematic.PNG" alt="Cinematic moodboard, frame by frame"></div>
+            <p class="result-video-label"><span class="i18n-ko">무드보드</span><span class="i18n-en">Moodboard</span></p>
+          </div>
+          <div>
+            <div class="cinema-compare-item"><video src="images/wardrobe/cinemaoriginal.mp4" autoplay muted loop playsinline controls></video></div>
+            <p class="result-video-label"><span class="i18n-ko">오리지널 촬영본</span><span class="i18n-en">Original Footage</span></p>
+          </div>
+        </div>
       </section>
 
       <div class="footer-nav">
         <a class="next-card" href="storagechat.html">
-          <div class="thumb"><div class="placeholder">이미지</div></div>
+          <div class="thumb"><video src="images/mmca/mmcamain.MP4" autoplay muted loop playsinline></video></div>
           <div class="next-card-body">
             <p class="label">Next project</p>
             <p class="title"><span class="i18n-ko">소장품을 배우다</span><span class="i18n-en">StorageChat Collection</span></p>
@@ -142,15 +211,16 @@
       </div>
 
     <nav class="toc">
-      <a href="#concept"><span class="i18n-ko">컨셉</span><span class="i18n-en">Concept</span></a>
-      <a href="#ai-visual-direction"><span class="i18n-ko">AI 비주얼 디렉션</span><span class="i18n-en">AI Visual Direction</span></a>
-      <a href="#ai-production-pipeline"><span class="i18n-ko">AI 프로덕션 파이프라인</span><span class="i18n-en">AI Production Pipeline</span></a>
-      <a href="#result"><span class="i18n-ko">다른 차원이 하나의 장면이 되다</span><span class="i18n-en">Different Dimensions, One Scene</span></a>
+      <a href="#background"><span class="i18n-ko">배경</span><span class="i18n-en">Background</span></a>
+      <a href="#creative-brief"><span class="i18n-ko">크리에이티브 브리프</span><span class="i18n-en">Creative Brief</span></a>
+      <a href="#results"><span class="i18n-ko">필름</span><span class="i18n-en">Films</span></a>
+      <a href="#process"><span class="i18n-ko">프로세스</span><span class="i18n-en">Process</span></a>
     </nav>
   </div>
 
   <script src="toc.js"></script>
   <script src="lang.js"></script>
   <script src="beforeafter.js"></script>
+  <script src="feature-swap.js"></script>
 </body>
 </html>
