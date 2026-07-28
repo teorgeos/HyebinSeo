@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frame by Frame · Portfolio</title>
+<script>document.documentElement.setAttribute('data-lang', localStorage.getItem('lang') || 'en');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a class="nav-name" href="index.html">Hyebin Seo</a>
+      <div class="nav-links">
+        <a href="projects.html" class="active">Projects</a>
+        <a href="ai-production.html">AI Production</a>
+        <a href="making-things.html">I make [&nbsp;&nbsp;&nbsp;???&nbsp;&nbsp;&nbsp;]</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="detail-shell">
+      <div class="hero">
+        <div class="hero-video">
+          <iframe src="https://www.youtube.com/embed/h52hr0Iu5kQ?autoplay=1&mute=1&loop=1&playlist=h52hr0Iu5kQ&controls=0&modestbranding=1&playsinline=1&rel=0&showinfo=0" title="Frame by Frame" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="detail-meta"><span>2025</span><span>·</span><span class="tag"><span class="i18n-ko">HCI Korea 2025 데모</span><span class="i18n-en">HCI Korea 2025 demo</span></span></div>
+      <h1 class="detail-title"><span class="i18n-ko">Frame by Frame</span><span class="i18n-en">Frame by Frame</span></h1>
+
+      <p class="summary">
+        <span class="i18n-ko">관람 경험을 함께 만드는 경험으로 재해석한 인터랙티브 시네마 설치 작품입니다. NFC 기반 아크릴 프레임을 통해 관람객들은 각자 기억하는 장면으로 영화의 상징적인 한 씬을 함께 완성합니다.</span>
+        <span class="i18n-en">An interactive cinema installation that reimagines movie-going as a collective experience. Through NFC-enabled acrylic frames, audiences collaboratively reconstruct an iconic film scene from their own favorite memories.</span>
+      </p>
+
+      <div class="info-box">
+        <div class="info-item"><label><span class="i18n-ko">기간</span><span class="i18n-en">Duration</span></label><span>2025</span></div>
+        <div class="info-item"><label><span class="i18n-ko">팀원</span><span class="i18n-en">Team</span></label><span class="i18n-ko">프로세싱 개발자 1인 · 아트 디렉션·인터랙션 디자인·3D·비주얼·영상 담당(본인)</span><span class="i18n-en">1 Processing developer · art direction, interaction design, 3D, visuals & video (myself)</span></div>
+        <div class="info-item"><label><span class="i18n-ko">역할</span><span class="i18n-en">Role</span></label><span class="i18n-ko">아트 디렉션 · 인터랙션 디자인 · 컨셉 기획 · 3D 오브젝트 제작 · 비주얼 · 영상</span><span class="i18n-en">Art direction · interaction design · concept · 3D object modeling · visuals · video</span></div>
+        <div class="info-item"><label><span class="i18n-ko">매체</span><span class="i18n-en">Medium</span></label><span class="i18n-ko">현장 설치 · 인터랙티브 아트 · 아두이노</span><span class="i18n-en">On-site installation · interactive art · Arduino</span></div>
+        <div class="info-item"><label><span class="i18n-ko">수상</span><span class="i18n-en">Recognition</span></label><span class="i18n-ko">HCI Korea 2025 크리에이티브 어워즈</span><span class="i18n-en">HCI Korea 2025 Creative Awards</span></div>
+      </div>
+
+      <section class="story-section" id="background">
+        <h2 class="section-title"><span class="i18n-ko">배경</span><span class="i18n-en">Background</span></h2>
+        <p class="lead i18n-ko">스크린 너머의 영화관 경험을 다시 상상하다</p>
+        <p class="lead i18n-en">Reimagining the cinema experience beyond the screen</p>
+        <p class="i18n-ko">스트리밍 플랫폼이 보편화되면서 영화관은 관객 감소를 겪고 있습니다. 이 프로젝트는 '물리적인 영화관만이 줄 수 있는 고유한 가치는 무엇일까?'라는 질문에서 시작해, 관객이 직접 참여하고 기억을 나누는 공간으로 영화관을 재해석하고자 했습니다.</p>
+        <p class="i18n-en">With streaming platforms becoming mainstream, cinemas are facing declining attendance. This project began with a question, what unique value can only a physical cinema provide, and reimagines the cinema as a space where audiences actively participate and share memories together.</p>
+      </section>
+
+      <section class="story-section" id="idea">
+        <h2 class="section-title"><span class="i18n-ko">아이디어</span><span class="i18n-en">Idea</span></h2>
+        <p class="lead i18n-ko">각자의 기억이 모여, 하나의 장면이 되다.</p>
+        <p class="lead i18n-en">Countless individual memories, one shared scene.</p>
+        <p class="i18n-ko">한 편의 영화는 수많은 프레임으로 이루어져 있고, 같은 영화를 보고도 사람마다 기억하는 순간은 다릅니다. 각자 가장 인상 깊었던 프레임을 하나씩 내놓는다면, 그것들이 모여 상징적인 한 장면을 완성할 수 있지 않을까? 관람객은 개인적인 기억만 안고 돌아가는 대신, 함께 만든 공동의 작품 일부가 됩니다.</p>
+        <p class="i18n-en">A film is made up of countless frames, and after watching a movie, everyone remembers different moments. What if each audience member contributed their most memorable frame, together reconstructing one iconic scene? Instead of leaving with only a personal memory, visitors become part of a collaborative artwork.</p>
+      </section>
+
+      <section class="story-section" id="inspiration">
+        <h2 class="section-title"><span class="i18n-ko">영감</span><span class="i18n-en">Inspiration</span></h2>
+        <p class="lead i18n-ko">흑백에서 컬러로, 오즈의 마법사</p>
+        <p class="lead i18n-en">From black and white to color, the Wizard of Oz</p>
+        <p class="i18n-ko">이 프로젝트는 흑백에서 테크니컬러로 전환되는 장면으로 유명한 &lt;오즈의 마법사&gt;에서 영감을 받았습니다. 이 설치 작품도 마찬가지로, 조각난 개인의 기억들을 하나의 선명한 집단 이미지로 전환하며 영화를 함께 나누는 경험으로 기념합니다.</p>
+        <p class="i18n-en">The project was inspired by The Wizard of Oz, famous for its transition from black-and-white to Technicolor. Similarly, the installation transforms fragmented individual memories into one vivid collective image, celebrating cinema as a shared experience.</p>
+      </section>
+
+      <section class="story-section" id="design-process">
+        <h2 class="section-title"><span class="i18n-ko">재료가 곧 메시지다</span><span class="i18n-en">The Material Is the Message</span></h2>
+        <p class="i18n-ko">재료는 아크릴로 정했다. 투명한 소재라 조명을 통과시키며 각자의 프레임이 서로 다른 기억이라는 걸 드러냈고, 여러 장이 겹쳐야 선명해지는 방식이 '조각난 기억이 모여 하나의 장면이 된다'는 아이디어와 맞아떨어졌다. 전경과 배경을 여러 겹으로 나눠 쌓아, 조명이 켜지면 실제 필름 프레임처럼 층층이 쌓인 이미지가 만들어지도록 했다.</p>
+        <p class="i18n-en">Acrylic became the material of choice. Being transparent, it let light pass through while making clear each frame held a different memory, and the way several sheets sharpened only once stacked together matched the idea of fragmented memories coming together into one scene. Splitting the foreground and background across multiple layers meant that once lit, the image built up the way a film is actually built up, frame by frame.</p>
+        <div class="step-row cols-3">
+          <div class="step-item">
+            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
+            <p class="step-number">01</p>
+            <p class="step-title"><span class="i18n-ko">인터랙션 프로토타이핑</span><span class="i18n-en">Interaction Prototyping</span></p>
+            <p class="step-desc i18n-ko">실제 제작에 들어가기 전, 종이 프로토타입으로 편안한 인터랙션 각도와 제스처를 탐구했습니다.</p>
+            <p class="step-desc i18n-en">Explored comfortable interaction angles and gestures using paper prototypes before moving into production.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
+            <p class="step-number">02</p>
+            <p class="step-title"><span class="i18n-ko">아크릴 프레임 제작</span><span class="i18n-en">Acrylic Frame Fabrication</span></p>
+            <p class="step-desc i18n-ko">프레임 조각들을 3D로 디자인하고, 원하는 물리적 형태를 구현하기 위해 투명 아크릴을 레이저 커팅했습니다.</p>
+            <p class="step-desc i18n-en">Designed the frame pieces in 3D and laser-cut transparent acrylic to achieve the desired physical form.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
+            <p class="step-number">03</p>
+            <p class="step-title"><span class="i18n-ko">레이어드 비주얼 구성</span><span class="i18n-en">Layered Visual Construction</span></p>
+            <p class="step-desc i18n-ko">전경 캐릭터와 배경 요소를 여러 겹의 아크릴 레이어로 분리해, 조명이 켜졌을 때 깊이감과 입체적인 비주얼 효과를 만들어냈습니다.</p>
+            <p class="step-desc i18n-en">Separated foreground characters and background elements into multiple acrylic layers, creating depth and a three-dimensional visual effect when illuminated.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section" id="interaction">
+        <h2 class="section-title"><span class="i18n-ko">인터랙션</span><span class="i18n-en">Interaction</span></h2>
+        <div class="step-row cols-2">
+          <div class="step-item">
+            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
+            <p class="step-number">01</p>
+            <p class="step-title"><span class="i18n-ko">기억 선택하기</span><span class="i18n-en">Choose a Memory</span></p>
+            <p class="step-desc i18n-ko">영화 관람 후, 관람객은 가장 인상 깊었던 장면을 선택합니다.</p>
+            <p class="step-desc i18n-en">After watching the film, visitors select the scene that left the strongest impression.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
+            <p class="step-number">02</p>
+            <p class="step-title"><span class="i18n-ko">프레임 스캔하기</span><span class="i18n-en">Scan the Frame</span></p>
+            <p class="step-desc i18n-ko">선택한 아크릴 프레임을 NFC가 내장된 유리 인터페이스에 가져다 댑니다.</p>
+            <p class="step-desc i18n-en">The selected acrylic frame is placed against an NFC-enabled glass interface.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
+            <p class="step-number">03</p>
+            <p class="step-title"><span class="i18n-ko">장면 나타내기</span><span class="i18n-en">Reveal the Scene</span></p>
+            <p class="step-desc i18n-ko">해당하는 영화 장면이 큰 화면 위에 나타납니다.</p>
+            <p class="step-desc i18n-en">The corresponding movie frame appears on the large display.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
+            <p class="step-number">04</p>
+            <p class="step-title"><span class="i18n-ko">공동 작품 완성하기</span><span class="i18n-en">Complete the Collective Artwork</span></p>
+            <p class="step-desc i18n-ko">더 많은 관람객이 참여할수록, 개별 프레임들이 점차 모여 하나의 상징적인 영화 장면을 완성하며 관객들이 공유한 기억을 시각화합니다.</p>
+            <p class="step-desc i18n-en">As more visitors participate, individual frames gradually come together to reconstruct one iconic cinematic scene, visualizing the audience's shared memories.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section" id="outcome">
+        <h2 class="section-title"><span class="i18n-ko">학회 무대에 서다</span><span class="i18n-en">From Studio to Stage</span></h2>
+        <p class="i18n-ko">이 프로젝트는 HCI Korea 2025의 크리에이티브 어워즈 전시에 선정되어, 학회 참석자들을 대상으로 인터랙티브 데모로 소개되었습니다.</p>
+        <p class="i18n-en">The project was selected for the Creative Awards exhibition at HCI Korea 2025, where it was presented as an interactive demo to conference attendees.</p>
+        <div class="section-image"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
+      </section>
+
+      <section class="story-section" id="publication">
+        <h2 class="section-title">Publication</h2>
+        <div class="refs">
+          <a class="ref-item" href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12131734" target="_blank" rel="noopener">
+            <div>
+              <div class="ref-title"><span class="i18n-ko">DBpia에서 논문 보기</span><span class="i18n-en">View paper on DBpia</span></div>
+              <div class="ref-source"><span class="i18n-ko">HCI Korea</span><span class="i18n-en">HCI Korea</span></div>
+            </div>
+            <span class="ref-arrow">→</span>
+          </a>
+        </div>
+      </section>
+
+      <div class="footer-nav">
+        <a class="next-card" href="breathin.html">
+          <div class="thumb"><div class="placeholder">이미지</div></div>
+          <div class="next-card-body">
+            <p class="label">Next project</p>
+            <p class="title"><span class="i18n-ko">다시, 숨</span><span class="i18n-en">Breathin</span></p>
+            <span class="tag"><span class="i18n-ko">소셜 디자인</span><span class="i18n-en">Social design</span></span>
+            <p class="desc"><span class="i18n-ko">숨이 가빠오는 순간, 곁에 있어줄 물건이 있다면?</span><span class="i18n-en">What if there was something to hold onto when your breath quickens?</span></p>
+          </div>
+          <span class="next-card-arrow">→</span>
+        </a>
+      </div>
+
+    <nav class="toc">
+      <a href="#background"><span class="i18n-ko">배경</span><span class="i18n-en">Background</span></a>
+      <a href="#idea"><span class="i18n-ko">아이디어</span><span class="i18n-en">Idea</span></a>
+      <a href="#inspiration"><span class="i18n-ko">영감</span><span class="i18n-en">Inspiration</span></a>
+      <a href="#design-process"><span class="i18n-ko">재료가 곧 메시지다</span><span class="i18n-en">The Material Is the Message</span></a>
+      <a href="#interaction"><span class="i18n-ko">인터랙션</span><span class="i18n-en">Interaction</span></a>
+      <a href="#outcome"><span class="i18n-ko">학회 무대에 서다</span><span class="i18n-en">From Studio to Stage</span></a>
+      <a href="#publication">Publication</a>
+    </nav>
+  </div>
+
+  <script src="toc.js"></script>
+  <script src="lang.js"></script>
+</body>
+</html>

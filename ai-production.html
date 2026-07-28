@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>AI Production · Hyebin Seo</title>
+<script>document.documentElement.setAttribute('data-lang', localStorage.getItem('lang') || 'en');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a class="nav-name" href="index.html">Hyebin Seo</a>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="ai-production.html" class="active">AI Production</a>
+        <a href="making-things.html">I make [&nbsp;&nbsp;&nbsp;???&nbsp;&nbsp;&nbsp;]</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <p class="projects-title" style="max-width: none;">
+      <span class="i18n-ko">AI Production</span>
+      <span class="i18n-en">AI Production</span>
+    </p>
+
+    <div class="filters" id="apFilters">
+      <button class="filter-btn active" data-filter="all">All <span class="count"></span></button>
+      <button class="filter-btn" data-filter="video">Video <span class="count"></span></button>
+      <button class="filter-btn" data-filter="image">Image <span class="count"></span></button>
+      <button class="filter-btn" data-filter="campaign">Campaign <span class="count"></span></button>
+      <button class="filter-btn" data-filter="product">Product <span class="count"></span></button>
+      <button class="filter-btn" data-filter="editorial">Editorial <span class="count"></span></button>
+      <button class="filter-btn" data-filter="artdirection">Art Direction <span class="count"></span></button>
+    </div>
+
+    <section class="ap-section" id="ai-video">
+      <h2 class="ap-heading"><span class="i18n-ko">AI Video</span><span class="i18n-en">AI Video</span></h2>
+      <div class="ap-video-row">
+        <video class="ap-clickable ap-filterable" data-cat="video" data-gallery="aivideo1" src="images/makethings/AI video/5.MP4" muted playsinline preload="metadata" style="object-fit: cover;"></video>
+        <video class="ap-clickable ap-filterable" data-cat="video" data-gallery="aivideo2" src="images/wardrobe/wardrobe(final).MP4" poster="images/wardrobe/28.png" muted playsinline preload="metadata"></video>
+        <video class="ap-clickable ap-filterable" data-cat="video" data-gallery="aivideo3" src="images/makethings/AI video/1.mp4" muted playsinline preload="metadata" style="object-fit: cover;"></video>
+        <video class="ap-clickable ap-filterable" data-cat="video" data-gallery="aivideo4" src="images/makethings/AI video/2.mp4" muted playsinline preload="metadata" style="object-fit: cover;"></video>
+        <video class="ap-clickable ap-filterable" data-cat="video" data-gallery="aivideo5" src="images/makethings/AI video/3.mp4" muted playsinline preload="metadata" style="object-fit: cover;"></video>
+        <video class="ap-clickable ap-filterable" data-cat="video" data-gallery="aivideo6" src="images/makethings/AI video/4.mp4" muted playsinline preload="metadata" style="object-fit: cover;"></video>
+      </div>
+    </section>
+
+    <section class="ap-section" id="art-direction">
+      <h2 class="ap-heading"><span class="i18n-ko">Art Direction</span><span class="i18n-en">Art Direction</span></h2>
+      <div class="ap-cards">
+        <a class="ap-card ap-filterable" data-cat="artdirection image campaign product" href="soo-soo.html">
+          <img src="images/soosoo/ComfyUI_temp_pilpz_00001_ 1.png" alt="Soo Soo">
+          <p><span class="i18n-ko">수수</span><span class="i18n-en">Soo Soo</span></p>
+        </a>
+        <a class="ap-card ap-filterable" data-cat="artdirection image campaign product" href="breathin.html">
+          <img src="images/breathin/main.png" alt="Breathin">
+          <p><span class="i18n-ko">다시, 숨</span><span class="i18n-en">Breathin</span></p>
+        </a>
+        <a class="ap-card ap-filterable" data-cat="artdirection image campaign product" href="wardrobe.html">
+          <div class="ap-card-placeholder"><span class="i18n-ko">이미지</span><span class="i18n-en">Image</span></div>
+          <p><span class="i18n-ko">모든 것은 옷장에서 시작되었다</span><span class="i18n-en">It All Started from the Wardrobe</span></p>
+        </a>
+      </div>
+    </section>
+
+    <section class="ap-section" data-cat="campaign" id="ai-food-styling">
+      <h2 class="ap-heading"><span class="i18n-ko">AI food styling</span><span class="i18n-en">AI food styling</span></h2>
+      <div class="ap-grid">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="0" src="images/makethings/blueband/blueband.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="1" src="images/makethings/blueband/1.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="2" src="images/makethings/blueband/2.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="3" src="images/makethings/blueband/3.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="4" src="images/makethings/blueband/4.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="5" src="images/makethings/blueband/5.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="6" src="images/makethings/blueband/6.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="7" src="images/makethings/blueband/7.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="8" src="images/makethings/blueband/8.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="9" src="images/makethings/blueband/9.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="10" src="images/makethings/blueband/10.png" alt="AI food styling">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="foodstyling" data-index="11" src="images/makethings/blueband/11.png" alt="AI food styling">
+      </div>
+    </section>
+
+    <section class="ap-section" data-cat="editorial" id="ai-human-styling">
+      <h2 class="ap-heading"><span class="i18n-ko">AI human styling</span><span class="i18n-en">AI human styling</span></h2>
+      <div class="ap-grid">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="0" src="images/makethings/AI Models/1.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="1" src="images/makethings/AI Models/2.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="2" src="images/makethings/AI Models/3.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="3" src="images/makethings/AI Models/4.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="4" src="images/makethings/AI Models/5.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="5" src="images/makethings/AI Models/6.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="6" src="images/makethings/AI Models/7.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="7" src="images/makethings/AI Models/8.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="8" src="images/makethings/AI Models/9.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="9" src="images/makethings/AI Models/10.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="10" src="images/makethings/AI Models/11.png" alt="AI human styling">
+        <img class="ap-clickable ap-filterable" data-cat="editorial" data-gallery="humanstyling" data-index="11" src="images/makethings/AI Models/12.png" alt="AI human styling">
+      </div>
+    </section>
+
+    <section class="ap-section" id="wish">
+      <h2 class="ap-heading"><span class="i18n-ko">Wish</span><span class="i18n-en">Wish</span></h2>
+      <div class="ap-grid-rows">
+        <img class="ap-clickable ap-filterable" data-cat="image" data-gallery="wish" data-index="4" src="images/makethings/wish/image.png" alt="Wish">
+        <img class="ap-clickable ap-filterable" data-cat="image" data-gallery="wish" data-index="5" src="images/makethings/wish/403a96e3-cebf-4356-b659-b6e7696474be.png" alt="Wish">
+        <img class="ap-clickable ap-filterable" data-cat="image" data-gallery="wish" data-index="2" src="images/makethings/wish/a4aa7c2b-3bfc-4c53-905e-f9359d310df5.png" alt="Wish">
+        <img class="ap-clickable ap-filterable" data-cat="image" data-gallery="wish" data-index="3" src="images/makethings/wish/e92f48af-b675-488a-a2aa-be6ab592d705.png" alt="Wish">
+      </div>
+    </section>
+
+    <section class="ap-section" id="breathin">
+      <h2 class="ap-heading"><span class="i18n-ko">Breathin</span><span class="i18n-en">Breathin</span></h2>
+      <div class="ap-grid-3" style="grid-template-columns: 0.7fr 0.7fr 1.6fr;">
+        <img class="ap-clickable ap-filterable" data-cat="product campaign" data-gallery="breathin" data-index="0" src="images/breathin/product.png" alt="Breathin" style="aspect-ratio: 3 / 4;">
+        <img class="ap-clickable ap-filterable" data-cat="product campaign" data-gallery="breathin" data-index="1" src="images/breathin/breathindetailproduct.png" alt="Breathin" style="aspect-ratio: 3 / 4;">
+        <img class="ap-clickable ap-filterable" data-cat="product campaign" data-gallery="breathin" data-index="2" src="images/breathin/breathinpackage.png" alt="Breathin">
+      </div>
+    </section>
+
+    <section class="ap-section" data-cat="product" id="souvenir">
+      <h2 class="ap-heading"><span class="i18n-ko">여행 기념품</span><span class="i18n-en">Souvenir</span></h2>
+      <div class="ap-grid">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="0" src="images/makethings/souvenir/image 1.PNG" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="1" src="images/makethings/souvenir/image 2.PNG" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="2" src="images/makethings/souvenir/image 3.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="3" src="images/makethings/souvenir/image 4.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="4" src="images/makethings/souvenir/image 5.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="5" src="images/makethings/souvenir/image 6.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="6" src="images/makethings/souvenir/image 8.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="7" src="images/makethings/souvenir/image 9.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="8" src="images/makethings/souvenir/image 10.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="9" src="images/makethings/souvenir/image 11.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="10" src="images/makethings/souvenir/image 12.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="11" src="images/makethings/souvenir/image 13.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="12" src="images/makethings/souvenir/image 14.PNG" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="13" src="images/makethings/souvenir/image 15.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="14" src="images/makethings/souvenir/image 16.jpg" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="15" src="images/makethings/souvenir/real1.png" alt="Souvenir">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="souvenir" data-index="16" src="images/makethings/souvenir/real2.png" alt="Souvenir">
+      </div>
+    </section>
+
+    <section class="ap-section" id="soosoo-gallery">
+      <h2 class="ap-heading"><span class="i18n-ko">수수</span><span class="i18n-en">Soo Soo</span></h2>
+      <div class="ap-grid-rows">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="soosoo" data-index="0" src="images/makethings/ai/soosoomodel/ComfyUI_temp_hcoxs_00001_ 1.png" alt="Soo Soo">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="soosoo" data-index="1" src="images/makethings/ai/soosoomodel/ComfyUI_temp_ixtgp_00001_ 1.png" alt="Soo Soo">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="soosoo" data-index="2" src="images/makethings/ai/soosoomodel/ComfyUI_temp_pilpz_00001_ 1.png" alt="Soo Soo">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="soosoo" data-index="3" src="images/makethings/ai/soosoomodel/ComfyUI_temp_vaotr_00001_ 1.png" alt="Soo Soo">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="soosoo" data-index="4" src="images/makethings/ai/soosoomodel/ComfyUI5_00003_ 1.png" alt="Soo Soo">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="soosoo" data-index="5" src="images/makethings/ai/soosoomodel/ComfyUI_00017_ 1.png" alt="Soo Soo">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="soosoo" data-index="6" src="images/makethings/ai/soosoomodel/ComfyUI_temp_lejjh_00001_ 1.png" alt="Soo Soo">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="soosoo" data-index="7" src="images/makethings/ai/soosoomodel/ComfyUI_temp_xipbn_00001_ 1.png" alt="Soo Soo">
+        <img class="ap-clickable ap-filterable" data-cat="campaign" data-gallery="soosoo" data-index="8" src="images/makethings/ai/soosoomodel/ComfyUI_temp_yeazv_00001_ 1.png" alt="Soo Soo">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="soosoo" data-index="9" src="images/makethings/ai/soosooproduct/ComfyUI3_00002_ 1.png" alt="Soo Soo" style="aspect-ratio: 1 / 1; object-fit: contain;">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="soosoo" data-index="10" src="images/makethings/ai/soosooproduct/ComfyUI_temp_hisjy_00003_ 1.png" alt="Soo Soo" style="aspect-ratio: 1 / 1; object-fit: contain;">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="soosoo" data-index="11" src="images/makethings/ai/soosooproduct/ComfyUI_temp_htpep_00003_ 2-1.png" alt="Soo Soo" style="aspect-ratio: 1 / 1; object-fit: contain;">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="soosoo" data-index="12" src="images/makethings/ai/soosooproduct/Group 1.png" alt="Soo Soo" style="aspect-ratio: 1 / 1; object-fit: contain;">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="soosoo" data-index="13" src="images/makethings/ai/soosooproduct/image 64.png" alt="Soo Soo" style="aspect-ratio: 1 / 1; object-fit: contain;">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="soosoo" data-index="14" src="images/makethings/ai/soosooproduct/image 65.png" alt="Soo Soo" style="aspect-ratio: 1 / 1; object-fit: contain;">
+        <img class="ap-clickable ap-filterable" data-cat="product" data-gallery="soosoo" data-index="15" src="images/makethings/ai/soosooproduct/image 66.png" alt="Soo Soo" style="aspect-ratio: 1 / 1; object-fit: contain;">
+      </div>
+    </section>
+  </div>
+
+  <div class="lightbox-overlay" id="soosoo-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">수수</span>
+        <span class="i18n-en">Soo Soo</span>
+      </h3>
+      <div class="lightbox-gallery">
+        <button class="carousel-arrow carousel-prev" aria-label="Previous">&lsaquo;</button>
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="images/makethings/ai/soosoomodel/ComfyUI_temp_hcoxs_00001_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosoomodel/ComfyUI_temp_ixtgp_00001_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosoomodel/ComfyUI_temp_pilpz_00001_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosoomodel/ComfyUI_temp_vaotr_00001_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosoomodel/ComfyUI5_00003_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosoomodel/ComfyUI_00017_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosoomodel/ComfyUI_temp_lejjh_00001_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosoomodel/ComfyUI_temp_xipbn_00001_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosoomodel/ComfyUI_temp_yeazv_00001_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosooproduct/ComfyUI3_00002_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosooproduct/ComfyUI_temp_hisjy_00003_ 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosooproduct/ComfyUI_temp_htpep_00003_ 2-1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosooproduct/Group 1.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosooproduct/image 64.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosooproduct/image 65.png" alt="Soo Soo" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/ai/soosooproduct/image 66.png" alt="Soo Soo" draggable="false"></div>
+        </div>
+        <button class="carousel-arrow carousel-next" aria-label="Next">&rsaquo;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay" id="breathin-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">다시, 숨</span>
+        <span class="i18n-en">Breathin</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">과호흡이 찾아올 때 사용하는 종이봉투 호흡법에서 영감을 받아, 실용적이면서도 감각적인 형태로 만들었다.</span>
+        <span class="i18n-en">Inspired by the paper-bag breathing method used during hyperventilation, I designed it to be both practical and sensory.</span>
+      </p>
+      <div class="lightbox-gallery">
+        <button class="carousel-arrow carousel-prev" aria-label="Previous">&lsaquo;</button>
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="images/breathin/product.png" alt="Breathin" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/breathin/breathindetailproduct.png" alt="Breathin" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/breathin/breathinpackage.png" alt="Breathin" draggable="false"></div>
+        </div>
+        <button class="carousel-arrow carousel-next" aria-label="Next">&rsaquo;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay" id="wish-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">Wish</span>
+        <span class="i18n-en">Wish</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">나는 힘들 때 남을 위해 산다는 생각으로 누군가를 떠올리며 기도한다. 네덜란드에 오고 그런 마음으로 Wish라는 카드와 쥬얼리를 직접 디자인하고 제작했다. After making this, I happened to meet someone crying on the street. 우리는 서로를 위해 기도하기로 약속하며 카드를 주고 받았다. 언젠가 이 세상 어딘가에서 우연히 만나 서로를 위한 그 모든 wish를 이루었다 말하자면서.<br><br>One day, I will say, "Thank you Jaime. Because of your prayer, I really became a creative director presenting Korea."</span>
+        <span class="i18n-en">When things get hard, I think of living for someone else, and I pray while picturing them in my mind. After coming to the Netherlands, with that same feeling, I designed and made a card and jewelry set called Wish myself. After making this, I happened to meet someone crying on the street. We promised to pray for each other and exchanged cards, saying that someday, somewhere in this world, we would meet again by chance and say that every wish we made for each other had come true.<br><br>One day, I will say, "Thank you Jaime. Because of your prayer, I really became a creative director presenting Korea."</span>
+      </p>
+      <div class="lightbox-gallery">
+        <button class="carousel-arrow carousel-prev" aria-label="Previous">&lsaquo;</button>
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="images/makethings/wish/IMG_1325 2 1.png" alt="Wish" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/wish/IMG_1458 1.png" alt="Wish" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/wish/a4aa7c2b-3bfc-4c53-905e-f9359d310df5.png" alt="Wish" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/wish/e92f48af-b675-488a-a2aa-be6ab592d705.png" alt="Wish" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/wish/image.png" alt="Wish" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/wish/403a96e3-cebf-4356-b659-b6e7696474be.png" alt="Wish" draggable="false"></div>
+        </div>
+        <button class="carousel-arrow carousel-next" aria-label="Next">&rsaquo;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay" id="humanstyling-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">AI human styling</span>
+        <span class="i18n-en">AI human styling</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">AI를 활용해 화보 컨셉에 맞는 스타일링을 하고 이미지를 만들었다.</span>
+        <span class="i18n-en">Using AI, I styled looks to fit different editorial concepts and created the images.</span>
+      </p>
+      <div class="lightbox-gallery">
+        <button class="carousel-arrow carousel-prev" aria-label="Previous">&lsaquo;</button>
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="images/makethings/AI Models/1.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/2.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/3.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/4.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/5.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/6.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/7.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/8.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/9.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/10.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/11.png" alt="AI human styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/AI Models/12.png" alt="AI human styling" draggable="false"></div>
+        </div>
+        <button class="carousel-arrow carousel-next" aria-label="Next">&rsaquo;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay" id="foodstyling-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">AI food styling</span>
+        <span class="i18n-en">AI food styling</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">블루밴드라는 회사의 마가린이 가진 발림성과 식물성이라는 특징을 시각적으로 잘 드러내기 위해 AI 비주얼 작업을 개인적으로 진행해서, 인스타그램이나 캠페인 등에 쓸 이미지들을 만들었다.</span>
+        <span class="i18n-en">I personally worked on AI visuals to visually highlight the spreadability and plant-based qualities of Blue Band margarine, creating images for use in Instagram posts, campaigns, and more.</span>
+      </p>
+      <div class="lightbox-gallery">
+        <button class="carousel-arrow carousel-prev" aria-label="Previous">&lsaquo;</button>
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="images/makethings/blueband/blueband.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/1.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/2.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/3.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/4.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/5.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/6.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/7.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/8.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/9.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/10.png" alt="AI food styling" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/blueband/11.png" alt="AI food styling" draggable="false"></div>
+        </div>
+        <button class="carousel-arrow carousel-next" aria-label="Next">&rsaquo;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay" id="souvenir-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">여행 기념품</span>
+        <span class="i18n-en">Souvenir</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">나는 여행갈 때마다 기념품을 좀 의미있게 만드는 거 좋아하는데, 스페인에서의 꿈같은 시간을 찍은 사진들을 oil painting 느낌으로 바꿔서 데일밴드랑 엽서로 만들어 주변사람들에게 줬다.</span>
+        <span class="i18n-en">Whenever I travel, I like to make my souvenirs a bit more meaningful. I turned photos from my dreamlike time in Spain into an oil painting style, then made them into band-aids and postcards to give to the people around me.</span>
+      </p>
+      <div class="lightbox-gallery">
+        <button class="carousel-arrow carousel-prev" aria-label="Previous">&lsaquo;</button>
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 1.PNG" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 2.PNG" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 3.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 4.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 5.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 6.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 8.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 9.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 10.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 11.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 12.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 13.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 14.PNG" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 15.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/image 16.jpg" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/real1.png" alt="Souvenir" draggable="false"></div>
+          <div class="carousel-slide"><img src="images/makethings/souvenir/real2.png" alt="Souvenir" draggable="false"></div>
+        </div>
+        <button class="carousel-arrow carousel-next" aria-label="Next">&rsaquo;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay video-modal" id="aivideo1-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">AI Video 1</span>
+        <span class="i18n-en">AI Video 1</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">헤테로토피아(Heterotopia) 컨셉을 실사 영화 버전으로 표현한 작업이다.</span>
+        <span class="i18n-en">A live-action film version of the heterotopia concept.</span>
+      </p>
+      <div class="lightbox-video">
+        <video src="images/makethings/AI video/5.MP4" muted playsinline loop controls preload="metadata"></video>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay video-modal" id="aivideo2-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">AI Video 2</span>
+        <span class="i18n-en">AI Video 2</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">1번의 cinema 버전과 달리, 나머지 영상들을 모두 합쳐 만든 조금 몽환적인 컨셉 영상이다.</span>
+        <span class="i18n-en">Unlike the cinema version in Video 1, this one is a slightly dreamlike concept video made by combining all the other videos together.</span>
+      </p>
+      <div class="lightbox-video">
+        <video src="images/wardrobe/wardrobe(final).MP4" muted playsinline loop controls preload="metadata"></video>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay video-modal" id="aivideo3-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">AI Video 3</span>
+        <span class="i18n-en">AI Video 3</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">헤테로토피아(Heterotopia)라는 컨셉으로, 다른 차원의 내가 내 옷장 속 옷을 입은 순간을 상상했다. 그렇게 상상력이 꽃피는 순간을 표현하기 위해, 꽃이 피어나는 모티프를 담았다.</span>
+        <span class="i18n-en">Under the concept of heterotopia, I imagined a moment where another version of me, from a different dimension, wears the clothes from my wardrobe. To express that blossoming of imagination, I used a motif of flowers blooming.</span>
+      </p>
+      <div class="lightbox-video">
+        <video src="images/makethings/AI video/1.mp4" muted playsinline loop controls preload="metadata"></video>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay video-modal" id="aivideo4-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">AI Video 4</span>
+        <span class="i18n-en">AI Video 4</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">헤테로토피아(Heterotopia)라는 컨셉으로, 다른 차원의 내가 내 옷장 속 옷을 입은 순간을 상상했다. 그렇게 상상력이 꽃피는 순간을 표현하기 위해, 꽃이 피어나는 모티프를 담았다.</span>
+        <span class="i18n-en">Under the concept of heterotopia, I imagined a moment where another version of me, from a different dimension, wears the clothes from my wardrobe. To express that blossoming of imagination, I used a motif of flowers blooming.</span>
+      </p>
+      <div class="lightbox-video">
+        <video src="images/makethings/AI video/2.mp4" muted playsinline loop controls preload="metadata"></video>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay video-modal" id="aivideo5-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">AI Video 5</span>
+        <span class="i18n-en">AI Video 5</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">헤테로토피아(Heterotopia)라는 컨셉으로, 다른 차원의 내가 내 옷장 속 옷을 입은 순간을 상상했다. 그렇게 상상력이 꽃피는 순간을 표현하기 위해, 꽃이 피어나는 모티프를 담았다.</span>
+        <span class="i18n-en">Under the concept of heterotopia, I imagined a moment where another version of me, from a different dimension, wears the clothes from my wardrobe. To express that blossoming of imagination, I used a motif of flowers blooming.</span>
+      </p>
+      <div class="lightbox-video">
+        <video src="images/makethings/AI video/3.mp4" muted playsinline loop controls preload="metadata"></video>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay video-modal" id="aivideo6-lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <h3 class="lightbox-title">
+        <span class="i18n-ko">AI Video 6</span>
+        <span class="i18n-en">AI Video 6</span>
+      </h3>
+      <p class="lightbox-desc">
+        <span class="i18n-ko">헤테로토피아(Heterotopia)라는 컨셉으로, 다른 차원의 내가 내 옷장 속 옷을 입은 순간을 상상했다. 그렇게 상상력이 꽃피는 순간을 표현하기 위해, 꽃이 피어나는 모티프를 담았다.</span>
+        <span class="i18n-en">Under the concept of heterotopia, I imagined a moment where another version of me, from a different dimension, wears the clothes from my wardrobe. To express that blossoming of imagination, I used a motif of flowers blooming.</span>
+      </p>
+      <div class="lightbox-video">
+        <video src="images/makethings/AI video/4.mp4" muted playsinline loop controls preload="metadata"></video>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var apFilters = document.getElementById('apFilters');
+    var apWrap = document.querySelector('.wrap');
+    var apSections = document.querySelectorAll('.ap-section');
+    var apOriginalOrder = Array.prototype.slice.call(apSections);
+    var apItems = document.querySelectorAll('.ap-filterable');
+
+    var imageCats = ['campaign', 'product', 'editorial'];
+    function matchesFilter(f, catString) {
+      var cats = (catString || '').split(' ');
+      if (f === 'all') return true;
+      if (f !== 'artdirection' && cats.indexOf('artdirection') !== -1) return false;
+      if (cats.indexOf(f) !== -1) return true;
+      if (f === 'image') {
+        return cats.some(function (c) { return imageCats.indexOf(c) !== -1; });
+      }
+      return false;
+    }
+
+    var reorderMap = {
+      image: ['souvenir', 'ai-food-styling', 'ai-human-styling'],
+      product: ['breathin'],
+      campaign: ['ai-food-styling']
+    };
+    function reorderSections(f) {
+      apOriginalOrder.forEach(function (s) { apWrap.appendChild(s); });
+      var priority = reorderMap[f];
+      if (priority) {
+        priority.forEach(function (id) {
+          var el = document.getElementById(id);
+          var first = apWrap.querySelector('.ap-section');
+          if (el && first) apWrap.insertBefore(el, first);
+        });
+      }
+    }
+
+    apFilters.querySelectorAll('.filter-btn').forEach(function (btn) {
+      var f = btn.getAttribute('data-filter');
+      var n = 0;
+      apItems.forEach(function (item) {
+        if (matchesFilter(f, item.getAttribute('data-cat'))) n++;
+      });
+      btn.querySelector('.count').textContent = '(' + n + ')';
+    });
+
+    apFilters.addEventListener('click', function (e) {
+      var btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+      apFilters.querySelectorAll('.filter-btn').forEach(function (b) {
+        b.classList.remove('active');
+      });
+      btn.classList.add('active');
+      var f = btn.getAttribute('data-filter');
+
+      reorderSections(f);
+
+      apItems.forEach(function (item) {
+        var show = matchesFilter(f, item.getAttribute('data-cat'));
+        item.classList.toggle('hidden', !show);
+      });
+
+      apSections.forEach(function (section) {
+        var anyVisible = Array.prototype.some.call(
+          section.querySelectorAll('.ap-filterable'),
+          function (item) { return !item.classList.contains('hidden'); }
+        );
+        section.classList.toggle('hidden', !anyVisible);
+      });
+    });
+
+    document.querySelectorAll('.lightbox-gallery').forEach(function (gallery) {
+      var track = gallery.querySelector('.carousel-track');
+      var slides = Array.prototype.slice.call(track.querySelectorAll('.carousel-slide'));
+      var prev = gallery.querySelector('.carousel-prev');
+      var next = gallery.querySelector('.carousel-next');
+      var current = 0;
+
+      function render() {
+        slides.forEach(function (slideEl, i) {
+          var diff = i - current;
+          var abs = Math.abs(diff);
+          if (abs > 4) {
+            slideEl.style.opacity = '0';
+            slideEl.style.pointerEvents = 'none';
+            slideEl.style.zIndex = '0';
+            return;
+          }
+          var tx = diff * 170;
+          var tz = -abs * 170;
+          var ry = diff === 0 ? 0 : (diff > 0 ? -38 : 38);
+          var scale = diff === 0 ? 1.7 : Math.max(0.55, 1 - abs * 0.16);
+          slideEl.style.transform = 'translateX(' + tx + 'px) translateZ(' + tz + 'px) rotateY(' + ry + 'deg) scale(' + scale + ')';
+          slideEl.style.opacity = diff === 0 ? '1' : String(Math.max(0.3, 1 - abs * 0.28));
+          slideEl.style.zIndex = diff === 0 ? '500' : String(100 - abs);
+          slideEl.style.pointerEvents = 'auto';
+          slideEl.style.cursor = diff === 0 ? 'default' : 'pointer';
+        });
+      }
+
+      gallery._setCurrent = function (i) {
+        current = Math.max(0, Math.min(slides.length - 1, i));
+        render();
+      };
+
+      slides.forEach(function (slideEl, i) {
+        slideEl.addEventListener('click', function (e) {
+          e.stopPropagation();
+          if (i !== current) {
+            current = i;
+            render();
+          }
+        });
+      });
+
+      prev.addEventListener('click', function () {
+        current = (current - 1 + slides.length) % slides.length;
+        render();
+      });
+      next.addEventListener('click', function () {
+        current = (current + 1) % slides.length;
+        render();
+      });
+
+      render();
+    });
+
+    document.querySelectorAll('.ap-clickable').forEach(function (el) {
+      el.addEventListener('click', function () {
+        var id = el.getAttribute('data-gallery');
+        var lb = document.getElementById(id + '-lightbox');
+        if (!lb) return;
+        if (el.hasAttribute('data-index')) {
+          var idx = parseInt(el.getAttribute('data-index'), 10) || 0;
+          var gallery = lb.querySelector('.lightbox-gallery');
+          if (gallery && gallery._setCurrent) gallery._setCurrent(idx);
+        }
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        var directVideo = lb.querySelector('.lightbox-video video');
+        if (directVideo) {
+          directVideo.currentTime = 0;
+          if (lb.classList.contains('video-modal')) {
+            setTimeout(function () {
+              directVideo.play().catch(function () {});
+            }, 500);
+          } else {
+            directVideo.play().catch(function () {});
+          }
+        }
+      });
+    });
+
+    document.querySelectorAll('.lightbox-overlay').forEach(function (lb) {
+      lb.addEventListener('click', function (e) {
+        if (e.target === lb || e.target.classList.contains('lightbox-close')) {
+          lb.classList.remove('open');
+          document.body.style.overflow = '';
+          lb.querySelectorAll('video').forEach(function (v) {
+            v.pause();
+            v.currentTime = 0;
+          });
+        }
+      });
+    });
+  </script>
+  <script src="lang.js"></script>
+</body>
+</html>
