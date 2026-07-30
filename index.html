@@ -4,39 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio</title>
-<script>document.documentElement.setAttribute('data-lang', localStorage.getItem('lang') || 'en');</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<meta http-equiv="refresh" content="0; url=projects.html">
+<link rel="canonical" href="projects.html">
+<script>location.replace('projects.html');</script>
 </head>
 <body>
-  <div class="wrap">
-    <div class="index-hero">
-      <p>
-        <span class="condensed-bold wave-text"><span class="wave-letter" style="animation-delay: 0s">H</span><span class="wave-letter" style="animation-delay: 0.08s">e</span><span class="wave-letter" style="animation-delay: 0.16s">l</span><span class="wave-letter" style="animation-delay: 0.24s">l</span><span class="wave-letter" style="animation-delay: 0.32s">o</span><span class="wave-letter" style="animation-delay: 0.4s">!</span></span><span class="condensed-bold"> I am Hyebin ( </span><span class="accent-serif heaven-swap" data-en="Heaven" data-ko="혜빈이<3">Heaven</span><span class="condensed-bold"> )</span><br>
-        <span class="condensed-regular">I translate core messages<br>into meaningful experiences<br>across AI, digital, and physical media.</span>
-      </p>
-      <a class="hero-scroll-btn" href="projects.html">
-        <span class="btn-text-full">Check out her projects</span>
-        <span class="btn-text-short">Projects</span>
-        <img src="images/arrow.png" alt="">
-      </a>
-    </div>
-  </div>
-
-  <script src="lang.js"></script>
-  <script>
-    document.querySelectorAll('.heaven-swap').forEach(function (el) {
-      el.addEventListener('mouseenter', function () {
-        el.textContent = el.dataset.ko;
-        el.classList.add('is-ko');
-      });
-      el.addEventListener('mouseleave', function () {
-        el.textContent = el.dataset.en;
-        el.classList.remove('is-ko');
-      });
-    });
-  </script>
 </body>
 </html>

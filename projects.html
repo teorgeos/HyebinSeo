@@ -7,13 +7,13 @@
 <script>document.documentElement.setAttribute('data-lang', localStorage.getItem('lang') || 'en');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Instrument+Serif:ital@1&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="site-nav">
     <div class="site-nav-inner">
-      <a class="nav-name" href="index.html">Hyebin Seo</a>
+      <a class="nav-name" href="projects.html">Hyebin Seo</a>
       <div class="nav-links">
         <a href="projects.html" class="active">Projects</a>
         <a href="ai-production.html">AI Production</a>
@@ -22,15 +22,25 @@
     </div>
   </nav>
 
-  <div class="wrap">
-    <h2 class="projects-title">Featured Project</h2>
+  <div class="wrap projects-wrap">
+    <div class="projects-hero">
+      <p class="projects-hero-headline">Art Director who uses AI and codes</p>
+      <div class="projects-hero-photo-wrap">
+        <p class="hero-signature hero-signature-left" aria-hidden="true">I know how to</p>
+        <div class="projects-hero-photo"><img src="images/HyebinSeo.png" alt="Hyebin Seo"></div>
+        <p class="hero-signature hero-signature-right" aria-hidden="true">Ship it!</p>
+      </div>
+      <p class="projects-hero-bio i18n-ko">미디어아트를 전공한 배경 덕분에, 해결하고 싶은 문제를 기술로 전달하는 법을 익혔습니다. 특히 XR과 AI를 <span class="hero-bio-link" data-preview="images/HyebinSeoresearcher.png" data-preview-type="image" data-preview-size="lg">연구하고</span> 개발하는 사람으로서, 일관되고 빠른 프로덕션을 위한 <a class="hero-bio-link" href="ai-production.html" data-preview="images/wardrobe/cinemaoriginal.mp4" data-preview-type="video">파이프라인</a>을 만드는 걸 정말 좋아합니다. <a class="hero-bio-link" href="storagechat.html" data-preview="images/mmca/mmcamain.MP4" data-preview-type="video">국립현대미술관</a>, <a class="hero-bio-link" href="gongronji.html" data-preview="images/gongronji/gongronjimain.png" data-preview-type="image">NGO</a>, <a class="hero-bio-link" href="clap-your-hands.html" data-preview="images/clapyourhandifyoubelieve/antonmain.MP4" data-preview-type="video">지역 업체</a>들과 어떻게 작업했는지 궁금하다면, 포트폴리오를 계속 살펴봐주세요!</p>
+      <p class="projects-hero-bio i18n-en">Background from Media Art brought me to use technology to convey the message that I want to solve a problem. Especially as a <span class="hero-bio-link" data-preview="images/HyebinSeoresearcher.png" data-preview-type="image" data-preview-size="lg">researcher</span> and developer of XR and AI, I love [<span id="heartEmoji">🖤</span>] making <a class="hero-bio-link" href="ai-production.html" data-preview="images/wardrobe/cinemaoriginal.mp4" data-preview-type="video">pipeline</a> for consistent and fast production process. Wanna know how I've worked with <a class="hero-bio-link" href="storagechat.html" data-preview="images/mmca/mmcamain.MP4" data-preview-type="video">National Museum</a>, <a class="hero-bio-link" href="gongronji.html" data-preview="images/gongronji/gongronjimain.png" data-preview-type="image">NGOs</a>, <a class="hero-bio-link" href="clap-your-hands.html" data-preview="images/clapyourhandifyoubelieve/antonmain.MP4" data-preview-type="video">local businesses</a>? Then check out my portfolio below!</p>
+      <div class="projects-hero-scroll"><img src="images/arrow.png" alt=""></div>
+    </div>
 
     <div class="filters" id="filters">
       <button class="filter-btn active" data-filter="all">All <span class="count"></span></button>
-      <button class="filter-btn" data-filter="exp">Experience <span class="count"></span></button>
-      <button class="filter-btn" data-filter="vd">Visual <span class="count"></span></button>
-      <button class="filter-btn" data-filter="ai">AI <span class="count"></span></button>
-      <button class="filter-btn" data-filter="research">Research <span class="count"></span></button>
+      <button class="filter-btn" data-filter="ai-production">AI Production <span class="count"></span></button>
+      <button class="filter-btn" data-filter="art-direction">Art Direction <span class="count"></span></button>
+      <button class="filter-btn" data-filter="experience-design">Experience Design <span class="count"></span></button>
+      <button class="filter-btn" data-filter="vr">VR <span class="count"></span></button>
       <a class="filter-link" href="making-things.html">Others</a>
     </div>
 
@@ -47,112 +57,294 @@
 
     <div class="grid" id="grid">
 
-      <a class="card" href="soo-soo.html" data-cat="vd ai">
+      <a class="card" href="soo-soo.html" data-cat="ai-production art-direction">
         <div class="thumb thumb-tall">
           <img src="images/soosoo/ComfyUI_temp_pilpz_00001_ 1.png" alt="Soo Soo">
-          <div class="overlay"></div>
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">AI 비주얼 디렉션</span><span class="i18n-en">AI Visual Direction</span></span>
+            <p class="title"><span class="i18n-ko">수수</span><span class="i18n-en">Soo Soo</span></p>
+            <p class="desc"><span class="i18n-ko">AI 글래스를 너디하지 않고 패셔너블하다고 인식하게 하려면 어떻게 해야 할까?</span><span class="i18n-en">How might AI glasses be perceived as fashionable instead of nerdy?</span></p>
+          </div>
         </div>
-        <div class="meta"><span>2026</span><span>·</span><span class="tag"><span class="i18n-ko">AI 비주얼 디렉션</span><span class="i18n-en">AI Visual Direction</span></span></div>
-        <p class="title"><span class="i18n-ko">수수</span><span class="i18n-en">Soo Soo</span></p>
-        <p class="desc"><span class="i18n-ko">AI 글래스를 너디하지 않고 패셔너블하다고 인식하게 하려면 어떻게 해야 할까?</span><span class="i18n-en">How might AI glasses be perceived as fashionable instead of nerdy?</span></p>
       </a>
 
-      <a class="card" href="gongronji.html" data-cat="exp">
-        <div class="thumb thumb-tall">
-          <img src="images/gongronji/gongronjimain.png" alt="Gongronji" style="object-position: 65% center;">
-          <div class="overlay"></div>
-        </div>
-        <div class="meta"><span>2025</span><span>·</span><span class="tag"><span class="i18n-ko">NGO · 역사관 협업</span><span class="i18n-en">Collaborated with NGO & History Museum</span></span></div>
-        <p class="title"><span class="i18n-ko">공론지</span><span class="i18n-en">Gongronji</span></p>
-        <p class="desc"><span class="i18n-ko">어떻게 하면 다음 세대가 역사에 직접 참여하게 할 수 있을까?</span><span class="i18n-en">How might we get the next generation to participate in history themselves?</span></p>
-      </a>
-
-      <a class="card" href="wardrobe.html" data-cat="vd ai">
+      <a class="card" href="wardrobe.html" data-cat="ai-production art-direction">
         <div class="thumb">
           <video src="images/wardrobe/wardrobe(final).MP4" autoplay muted loop playsinline></video>
-          <div class="overlay"></div>
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">AI 비주얼 디렉션</span><span class="i18n-en">AI Visual Direction</span></span>
+            <p class="title"><span class="i18n-ko">모든 것은 옷장에서 시작되었다</span><span class="i18n-en">It All Started from the Wardrobe</span></p>
+            <p class="desc"><span class="i18n-ko">내 옷장 속 옷들을 다른 차원의 누군가가 입는다면 어떨까?</span><span class="i18n-en">What if someone from another dimension wore the clothes in my wardrobe?</span></p>
+          </div>
         </div>
-        <div class="meta"><span>2026</span><span>·</span><span class="tag"><span class="i18n-ko">AI 비주얼 디렉션</span><span class="i18n-en">AI Visual Direction</span></span></div>
-        <p class="title"><span class="i18n-ko">모든 것은 옷장에서 시작되었다</span><span class="i18n-en">It All Started from the Wardrobe</span></p>
-        <p class="desc"><span class="i18n-ko">내 옷장 속 옷들을 다른 차원의 누군가가 입는다면 어떨까?</span><span class="i18n-en">What if someone from another dimension wore the clothes in my wardrobe?</span></p>
       </a>
 
-      <a class="card" href="storagechat.html" data-cat="ai exp">
+      <a class="card" href="storagechat.html" data-cat="experience-design ai-production art-direction">
         <div class="thumb">
           <video src="images/mmca/mmcamain.MP4" autoplay muted loop playsinline></video>
-          <div class="overlay"></div>
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">국립현대미술관(MMCA)과 협업</span><span class="i18n-en">Collaborated with National Museum</span></span>
+            <p class="title"><span class="i18n-ko">소장품을 배우다</span><span class="i18n-en">StorageChat Collection</span></p>
+            <p class="desc"><span class="i18n-ko">어떻게 하면 관람객이 소장품을 더 깊이 탐구할 수 있는 챗봇 질문을 설계할 수 있을까?</span><span class="i18n-en">How might chatbot questions help visitors explore a museum's collection more deeply?</span></p>
+          </div>
         </div>
-        <div class="meta"><span>2025</span><span>·</span><span class="tag"><span class="i18n-ko">국립현대미술관(MMCA)과 협업</span><span class="i18n-en">Collaborated with National Museum</span></span></div>
-        <p class="title"><span class="i18n-ko">소장품을 배우다</span><span class="i18n-en">StorageChat Collection</span></p>
-        <p class="desc"><span class="i18n-ko">어떻게 하면 관람객이 소장품을 더 깊이 탐구할 수 있는 챗봇 질문을 설계할 수 있을까?</span><span class="i18n-en">How might chatbot questions help visitors explore a museum's collection more deeply?</span></p>
       </a>
 
-      <a class="card" href="breathin.html" data-cat="vd ai">
+      <a class="card" href="clap-your-hands.html" data-cat="vr experience-design art-direction">
         <div class="thumb">
+          <video src="images/clapyourhandifyoubelieve/antonmain.MP4" autoplay muted loop playsinline></video>
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">지역 업체 협업</span><span class="i18n-en">Collaborated with Local Business</span></span>
+            <p class="title"><span class="i18n-ko">믿는다면, 박수를 쳐주세요</span><span class="i18n-en">Clap Your Hands If You Believe</span></p>
+            <p class="desc"><span class="i18n-ko">어른이 된 마을에 다시 네버랜드를 열어주면 어떨까?</span><span class="i18n-en">What if a grown-up town could reopen its Neverland?</span></p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="breathin.html" data-cat="ai-production art-direction experience-design">
+        <div class="thumb thumb-portrait">
           <img src="images/breathin/main.png" alt="Breathin">
-          <div class="overlay"></div>
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">AI 비주얼 디렉션</span><span class="i18n-en">AI Visual Direction</span></span>
+            <p class="title"><span class="i18n-ko">다시, 숨</span><span class="i18n-en">Breathin</span></p>
+            <p class="desc"><span class="i18n-ko">공황장애를 덜 터부시하게 만드는 물건이 있다면?</span><span class="i18n-en">What if an object could help make panic disorder feel less taboo?</span></p>
+          </div>
         </div>
-        <div class="meta"><span>2026</span><span class="tag"><span class="i18n-ko">AI 비주얼 디렉션</span><span class="i18n-en">AI Visual Direction</span></span></div>
-        <p class="title"><span class="i18n-ko">다시, 숨</span><span class="i18n-en">Breathin</span></p>
-        <p class="desc"><span class="i18n-ko">공황장애를 덜 터부시하게 만드는 물건이 있다면?</span><span class="i18n-en">What if an object could help make panic disorder feel less taboo?</span></p>
       </a>
 
-      <a class="card" href="frame-by-frame.html" data-cat="exp research">
-        <div class="thumb">
-          <video src="images/framebyframe/main.MP4" autoplay muted loop playsinline></video>
-          <div class="overlay"></div>
+      <a class="card" href="wish.html" data-cat="ai-production art-direction">
+        <div class="thumb thumb-square">
+          <img src="images/makethings/wish/e92f48af-b675-488a-a2aa-be6ab592d705.png" alt="Wish">
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">카드 · 쥬얼리 디자인</span><span class="i18n-en">Card · jewelry design</span></span>
+            <p class="title"><span class="i18n-ko">Wish</span><span class="i18n-en">Wish</span></p>
+            <p class="desc"><span class="i18n-ko">힘든 순간 서로를 향한 기도를, 어떻게 하면 손에 쥘 수 있는 무언가로 남길 수 있을까?</span><span class="i18n-en">How might we turn a prayer for someone else into something you can hold in your hand?</span></p>
+          </div>
         </div>
-        <div class="meta"><span>2025</span><span>·</span><span class="tag"><span class="i18n-ko">HCI Korea 2025 데모</span><span class="i18n-en">HCI Korea 2025 demo</span></span></div>
-        <p class="title"><span class="i18n-ko">Frame by Frame</span><span class="i18n-en">Frame by Frame</span></p>
-        <p class="desc"><span class="i18n-ko">모두가 조금씩 다르게 기억하는 장면을, 함께 완성한다면?</span><span class="i18n-en">What if everyone's slightly different memory came together as one?</span></p>
       </a>
 
-      <a class="card" href="heritagebrew.html" data-cat="exp research">
-        <div class="thumb">
-          <video src="images/heritagebrew/heritagemain.mov" autoplay muted loop playsinline></video>
-          <div class="overlay"></div>
+      <a class="card" href="blueband.html" data-cat="ai-production art-direction">
+        <div class="thumb thumb-portrait">
+          <img src="images/makethings/blueband/blueband.png" alt="Blue Band">
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">AI 푸드 스타일링</span><span class="i18n-en">AI food styling</span></span>
+            <p class="title"><span class="i18n-ko">Blue Band</span><span class="i18n-en">Blue Band</span></p>
+            <p class="desc"><span class="i18n-ko">블루밴드를 어떻게 하면 신선하고 믿음직스러운 마가린으로 보여줄 수 있을까?</span><span class="i18n-en">How might we make Blue Band feel like a fresh, trustworthy margarine?</span></p>
+          </div>
         </div>
-        <div class="meta"><span>2025</span><span>·</span><span class="tag"><span class="i18n-ko">VR · ISMAR 2025 데모</span><span class="i18n-en">VR · ISMAR 2025 demo</span></span></div>
-        <p class="title"><span class="i18n-ko">HeritageBrew</span><span class="i18n-en">HeritageBrew</span></p>
-        <p class="desc"><span class="i18n-ko">타이동에 가지 않고도, 사라져가는 전통주 문화를 배울 수 있다면?</span><span class="i18n-en">What if you could learn a disappearing liquor tradition without traveling to Taitung?</span></p>
       </a>
 
-      <a class="card" href="george.html" data-cat="vd">
+      <a class="card" href="souvenir.html" data-cat="ai-production art-direction">
+        <div class="thumb thumb-square">
+          <img src="images/makethings/souvenir/souveniurmain.png" alt="Souvenir">
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">여행 기념품 디자인</span><span class="i18n-en">Travel souvenir design</span></span>
+            <p class="title"><span class="i18n-ko">여행 기념품</span><span class="i18n-en">Souvenir</span></p>
+            <p class="desc"><span class="i18n-ko">여행에서 남긴 사진들을, 어떻게 하면 일상에서 계속 곁에 둘 수 있는 기념품으로 바꿀 수 있을까?</span><span class="i18n-en">How might we turn travel photos into everyday keepsakes people can actually carry with them?</span></p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="gongronji.html" data-cat="experience-design art-direction">
+        <div class="thumb thumb-tall">
+          <img src="images/gongronji/gongronjimain.png" alt="Gongronji" style="object-position: 65% center;">
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">NGO · 역사관 협업</span><span class="i18n-en">Collaborated with NGO & History Museum</span></span>
+            <p class="title"><span class="i18n-ko">공론지</span><span class="i18n-en">Gongronji</span></p>
+            <p class="desc"><span class="i18n-ko">어떻게 하면 다음 세대가 역사에 직접 참여하게 할 수 있을까?</span><span class="i18n-en">How might we get the next generation to participate in history themselves?</span></p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="plant-parents.html" data-cat="experience-design art-direction">
+        <div class="thumb thumb-square">
+          <img src="images/plantparent/main.jpg" alt="Plant Parents Club">
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">청년센터 협업</span><span class="i18n-en">Collaborated with a Youth Center</span></span>
+            <p class="title"><span class="i18n-ko">식집사 모임</span><span class="i18n-en">Plant Parents Club</span></p>
+            <p class="desc"><span class="i18n-ko">식물이 자신의 감정을 표현한다면, 외로움도 덜어낼 수 있을까?</span><span class="i18n-en">What if a plant could express its own feelings, could that ease loneliness too?</span></p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="george.html" data-cat="experience-design art-direction">
         <div class="thumb">
           <video src="images/george/georgemain.MP4" autoplay muted loop playsinline style="object-position: center bottom;"></video>
-          <div class="overlay"></div>
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">팬 프로젝트</span><span class="i18n-en">Fan project</span></span>
+            <p class="title"><span class="i18n-ko">죠지의 세계</span><span class="i18n-en">George's Universe</span></p>
+            <p class="desc"><span class="i18n-ko">좋아하는 앨범의 세계관을, 직접 만든 게임으로 옮긴다면?</span><span class="i18n-en">What if you turned your favorite album's world into a game you built yourself?</span></p>
+          </div>
         </div>
-        <div class="meta"><span>2024</span><span>·</span><span class="tag"><span class="i18n-ko">팬 프로젝트</span><span class="i18n-en">Fan project</span></span></div>
-        <p class="title"><span class="i18n-ko">죠지의 세계</span><span class="i18n-en">George's Universe</span></p>
-        <p class="desc"><span class="i18n-ko">좋아하는 앨범의 세계관을, 직접 만든 게임으로 옮긴다면?</span><span class="i18n-en">What if you turned your favorite album's world into a game you built yourself?</span></p>
       </a>
 
-      <a class="card" href="plant-parents.html" data-cat="exp">
+      <a class="card" href="ai-human-styling.html" data-cat="ai-production art-direction">
         <div class="thumb">
-          <img src="images/plantparent/main.jpg" alt="Plant Parents Club">
-          <div class="overlay"></div>
+          <img src="images/makethings/AI Models/4.png" alt="AI human styling">
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">AI 화보 스타일링</span><span class="i18n-en">AI editorial styling</span></span>
+            <p class="title"><span class="i18n-ko">AI human styling</span><span class="i18n-en">AI human styling</span></p>
+            <p class="desc"><span class="i18n-ko">어떻게 하면 실제 촬영 없이도 다양한 컨셉의 화보 스타일링을 완성도 있게 구현할 수 있을까?</span><span class="i18n-en">How might we realize polished editorial styling across different concepts without an actual photoshoot?</span></p>
+          </div>
         </div>
-        <div class="meta"><span>2023</span><span>·</span><span class="tag"><span class="i18n-ko">청년센터 협업</span><span class="i18n-en">Collaborated with a Youth Center</span></span></div>
-        <p class="title"><span class="i18n-ko">식집사 모임</span><span class="i18n-en">Plant Parents Club</span></p>
-        <p class="desc"><span class="i18n-ko">식물이 자신의 감정을 표현한다면, 외로움도 덜어낼 수 있을까?</span><span class="i18n-en">What if a plant could express its own feelings, could that ease loneliness too?</span></p>
       </a>
 
-      <a class="card" href="clap-your-hands.html" data-cat="exp">
+      <a class="card" href="frame-by-frame.html" data-cat="experience-design art-direction">
         <div class="thumb">
-          <div class="placeholder">이미지</div>
-          <div class="overlay"></div>
+          <video src="images/framebyframe/main.MP4" autoplay muted loop playsinline></video>
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">HCI Korea 2025 데모</span><span class="i18n-en">HCI Korea 2025 demo</span></span>
+            <p class="title"><span class="i18n-ko">Frame by Frame</span><span class="i18n-en">Frame by Frame</span></p>
+            <p class="desc"><span class="i18n-ko">모두가 조금씩 다르게 기억하는 장면을, 함께 완성한다면?</span><span class="i18n-en">What if everyone's slightly different memory came together as one?</span></p>
+          </div>
         </div>
-        <div class="meta"><span>2026</span><span>·</span><span class="tag"><span class="i18n-ko">지역 업체 협업</span><span class="i18n-en">Collaborated with Local Business</span></span></div>
-        <p class="title"><span class="i18n-ko">믿는다면, 박수를 쳐주세요</span><span class="i18n-en">Clap Your Hands If You Believe</span></p>
-        <p class="desc"><span class="i18n-ko">어른이 된 마을에 다시 네버랜드를 열어주면 어떨까?</span><span class="i18n-en">What if a grown-up town could reopen its Neverland?</span></p>
+      </a>
+
+      <a class="card" href="heritagebrew.html" data-cat="vr experience-design art-direction">
+        <div class="thumb">
+          <video src="images/heritagebrew/heritagemain.mov" autoplay muted loop playsinline></video>
+          <div class="thumb-scrim"></div>
+          <div class="thumb-info">
+            <span class="tag"><span class="i18n-ko">VR · ISMAR 2025 데모</span><span class="i18n-en">VR · ISMAR 2025 demo</span></span>
+            <p class="title"><span class="i18n-ko">HeritageBrew</span><span class="i18n-en">HeritageBrew</span></p>
+            <p class="desc"><span class="i18n-ko">타이동에 가지 않고도, 사라져가는 전통주 문화를 배울 수 있다면?</span><span class="i18n-en">What if you could learn a disappearing liquor tradition without traveling to Taitung?</span></p>
+          </div>
+        </div>
       </a>
 
     </div>
   </div>
 
+  <div class="link-preview" id="linkPreview">
+    <video id="linkPreviewVideo" muted loop playsinline></video>
+    <img id="linkPreviewImg" alt="">
+  </div>
+
   <script>
+    var heroSection = document.querySelector('.projects-hero');
+    var heroTextEls = document.querySelectorAll('.projects-hero-headline, .projects-hero-bio, .hero-signature');
+    var heroLinkEls = document.querySelectorAll('.hero-bio-link');
+    var heroScrollArrow = document.querySelector('.projects-hero-scroll img');
+    var siteNav = document.querySelector('.site-nav');
+    var navTextEls = document.querySelectorAll('.nav-name, .nav-links a');
+    var heartEmoji = document.getElementById('heartEmoji');
+
+    function updateHeroFade() {
+      if (!heroSection) return;
+      var rect = heroSection.getBoundingClientRect();
+      var progress = Math.min(1, Math.max(0, (0 - rect.top) / rect.height));
+      var bgVal = Math.round(progress * 255);
+      var textVal = Math.round((1 - progress) * 255);
+      document.body.style.backgroundColor = 'rgb(' + bgVal + ',' + bgVal + ',' + bgVal + ')';
+      heroTextEls.forEach(function (el) {
+        el.style.color = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
+      });
+      heroLinkEls.forEach(function (el) {
+        el.style.color = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
+        el.style.borderBottomColor = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
+      });
+      if (heroScrollArrow) heroScrollArrow.style.filter = 'invert(' + (1 - progress) + ')';
+      if (siteNav) siteNav.style.backgroundColor = 'rgba(255, 255, 255, ' + progress + ')';
+      navTextEls.forEach(function (el) {
+        el.style.color = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
+      });
+      if (heartEmoji) heartEmoji.textContent = progress < 0.5 ? '🤍' : '🖤';
+    }
+
+    updateHeroFade();
+    window.addEventListener('scroll', updateHeroFade, { passive: true });
+    window.addEventListener('resize', updateHeroFade);
+
+    var linkPreview = document.getElementById('linkPreview');
+    var linkPreviewVideo = document.getElementById('linkPreviewVideo');
+    var linkPreviewImg = document.getElementById('linkPreviewImg');
+
+    document.querySelectorAll('.hero-bio-link[data-preview]').forEach(function (link) {
+      var src = link.getAttribute('data-preview');
+      var type = link.getAttribute('data-preview-type');
+      var size = link.getAttribute('data-preview-size');
+
+      link.addEventListener('mouseenter', function () {
+        if (type === 'video') {
+          linkPreviewVideo.src = src;
+          linkPreviewVideo.style.display = 'block';
+          linkPreviewImg.style.display = 'none';
+          linkPreviewVideo.currentTime = 0;
+          linkPreviewVideo.play().catch(function () {});
+        } else {
+          linkPreviewImg.src = src;
+          linkPreviewImg.style.display = 'block';
+          linkPreviewVideo.style.display = 'none';
+          linkPreviewVideo.pause();
+        }
+        linkPreview.classList.toggle('size-lg', size === 'lg');
+        linkPreview.classList.add('show');
+      });
+
+      link.addEventListener('mousemove', function (e) {
+        linkPreview.style.left = (e.clientX + 18) + 'px';
+        linkPreview.style.top = (e.clientY + 18) + 'px';
+      });
+
+      link.addEventListener('mouseleave', function () {
+        linkPreview.classList.remove('show');
+        linkPreviewVideo.pause();
+      });
+    });
+
     var filters = document.getElementById('filters');
     var cards = document.querySelectorAll('#grid .card');
+    var grid = document.getElementById('grid');
+
+    function layoutMasonry() {
+      var visibleCards = Array.prototype.filter.call(cards, function (card) {
+        return !card.classList.contains('hidden');
+      });
+      var gap = window.innerWidth <= 720 ? 14 : 20;
+      var containerWidth = grid.clientWidth;
+      var minColWidth = 230;
+      var cols = Math.max(1, Math.min(4, Math.floor((containerWidth + gap) / (minColWidth + gap))));
+      var colWidth = (containerWidth - gap * (cols - 1)) / cols;
+      var colHeights = new Array(cols).fill(0);
+
+      visibleCards.forEach(function (card) {
+        card.style.width = colWidth + 'px';
+        var minCol = 0;
+        for (var i = 1; i < cols; i++) {
+          if (colHeights[i] < colHeights[minCol]) minCol = i;
+        }
+        var x = minCol * (colWidth + gap);
+        var y = colHeights[minCol];
+        card.style.left = x + 'px';
+        card.style.top = y + 'px';
+        var h = card.offsetHeight;
+        colHeights[minCol] = y + h + gap;
+      });
+
+      var maxHeight = colHeights.length ? Math.max.apply(null, colHeights) - gap : 0;
+      grid.style.height = Math.max(0, maxHeight) + 'px';
+    }
+
+    layoutMasonry();
+    window.addEventListener('load', layoutMasonry);
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(layoutMasonry, 150);
+    });
 
     filters.querySelectorAll('.filter-btn').forEach(function (btn) {
       var f = btn.getAttribute('data-filter');
@@ -177,9 +369,10 @@
         var show = f === 'all' || cats.indexOf(f) !== -1;
         card.classList.toggle('hidden', !show);
       });
+      layoutMasonry();
       var aiBanner = document.getElementById('aiBanner');
       var aiVideo = aiBanner.querySelector('video');
-      if (f === 'ai') {
+      if (f === 'ai-production') {
         aiBanner.classList.add('show');
         aiVideo.play().catch(function () {});
       } else {
