@@ -31,7 +31,79 @@ body {
   top: 0;
   z-index: 50;
   background: #ffffff;
-  transition: background-color 0.15s ease-out;
+}
+body.projects-page .site-nav {
+  background: transparent;
+}
+.card-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.card-bg.show { opacity: 0.9; }
+.card-bg video,
+.card-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+body.projects-page .projects-wrap {
+  position: relative;
+  z-index: 2;
+}
+body.projects-page .link-preview {
+  z-index: 999;
+}
+
+/* ---------- custom cursor ---------- */
+body.projects-page { cursor: none; }
+body.projects-page a,
+body.projects-page button,
+body.projects-page .card,
+body.projects-page .filter-btn { cursor: none; }
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid #000000;
+  border-radius: 50%;
+  background: transparent;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: border-color 0.15s ease-out, width 0.15s ease, height 0.15s ease;
+}
+@media (max-width: 720px) {
+  body.projects-page { cursor: auto; }
+  body.projects-page a,
+  body.projects-page button,
+  body.projects-page .card,
+  body.projects-page .filter-btn { cursor: pointer; }
+  .custom-cursor { display: none; }
+}
+
+/* ---------- custom scrollbar ---------- */
+body.projects-page {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-line, #000000) transparent;
+}
+body.projects-page::-webkit-scrollbar {
+  width: 10px;
+}
+body.projects-page::-webkit-scrollbar-track {
+  background: transparent;
+}
+body.projects-page::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 1px solid var(--scroll-line, #000000);
+  border-radius: 6px;
 }
 .site-nav-inner {
   max-width: 1120px;
@@ -235,7 +307,6 @@ body {
   flex-shrink: 0;
   aspect-ratio: 642 / 868;
   overflow: hidden;
-  border: 1px solid var(--img-border);
   background: var(--img-bg);
 }
 .projects-hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -293,7 +364,6 @@ body {
   width: 160px;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  border: 1px solid var(--img-border);
   background: #000;
   pointer-events: none;
   opacity: 0;
@@ -337,7 +407,6 @@ body {
   width: 280px;
   border-radius: 50%;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -520,7 +589,6 @@ header p {
   border-radius: 0;
   overflow: hidden;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
 }
 .thumb.thumb-tall {
   aspect-ratio: 3 / 4;
@@ -748,8 +816,6 @@ header p {
   aspect-ratio: 21 / 9;
   border-radius: 0;
   background: var(--img-bg);
-  border-top: 1px solid var(--img-border);
-  border-bottom: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -799,7 +865,6 @@ header p {
 .hero-split-image {
   aspect-ratio: 4 / 5;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -969,7 +1034,6 @@ header p {
   aspect-ratio: 4 / 3;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1212,7 +1276,6 @@ body.breathin-page #background p {
   aspect-ratio: 16 / 9;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -1342,7 +1405,6 @@ body.breathin-page #background p {
   aspect-ratio: 4 / 3;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1378,7 +1440,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   grid-template-columns: 1fr 1fr;
   gap: 0;
   margin: 24px auto 8px;
-  border: 1px solid var(--img-border);
   max-width: 480px;
 }
 .frame-pair img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
@@ -1395,7 +1456,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
 .experience-item {
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1469,7 +1529,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   aspect-ratio: 4 / 3;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1488,7 +1547,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   aspect-ratio: 16 / 10;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1502,7 +1560,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   aspect-ratio: 16 / 9;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   overflow: hidden;
   margin: 24px 0 40px;
 }
@@ -1551,7 +1608,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   width: 44px;
   height: 44px;
   overflow: hidden;
-  border: 1px solid var(--img-border);
   background: var(--img-bg);
   opacity: 0.8;
   transition: opacity .2s ease;
@@ -1638,7 +1694,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   overflow: hidden;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   margin: 24px 0;
 }
 .inline-image-small img {
@@ -1666,7 +1721,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   margin: 16px 0 0;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1734,7 +1788,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   aspect-ratio: 4 / 3;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1765,7 +1818,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   aspect-ratio: 4 / 3;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1789,7 +1841,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   aspect-ratio: 3 / 4;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1846,7 +1897,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   aspect-ratio: 16 / 9;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -1992,7 +2042,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
 }
 .resource-item {
   display: block;
-  border: 1px solid var(--img-border);
   border-radius: 4px;
   padding: 20px;
   text-decoration: none;
@@ -2033,7 +2082,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   width: 100%;
   aspect-ratio: 2 / 1;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   border-radius: 0;
   overflow: hidden;
   margin: 20px 0 8px;
@@ -2117,7 +2165,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   flex: 1 1 220px;
   max-width: 320px;
   aspect-ratio: 9 / 16;
-  border: 1px solid var(--img-border);
   border-radius: 8px;
   overflow: hidden;
   background: #000;
@@ -2150,7 +2197,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
 .dnd-card {
   width: 140px;
   aspect-ratio: 3 / 4;
-  border: 1px solid var(--img-border);
   border-radius: 8px;
   background: var(--img-bg);
   display: flex;
@@ -2241,7 +2287,6 @@ body.george-page .next-card { cursor: url('images/george/gimbab-cursor.png') 24 
   overflow: hidden;
   border-radius: 4px;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   margin: 24px 0;
   user-select: none;
 }
@@ -2454,7 +2499,6 @@ body.wardrobe-page .brief-split-left .brief-statement {
   aspect-ratio: 1 / 1;
   overflow: hidden;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
 }
 .ref-grid-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .keyword-line {
@@ -2527,7 +2571,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
 }
 .cinema-compare-item img,
 .cinema-compare-item video { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -2552,7 +2595,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
 }
 .demo-video-frame video { width: 100%; height: 100%; object-fit: contain; display: block; background: #000; }
 .demo-video-caption { font-size: 16px; line-height: 1.8; color: var(--text-secondary); margin: 0; }
@@ -2565,7 +2607,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   max-width: 480px;
   margin: 24px auto 4px;
   background: #fff;
-  border: 1px solid var(--img-border);
 }
 .system-diagram img { width: 100%; height: auto; object-fit: contain; display: block; }
 @media (max-width: 640px) {
@@ -2576,7 +2617,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   width: 100%;
   border-radius: 0;
   background: #000;
-  border: 1px solid var(--img-border);
   margin: 24px 0 12px;
 }
 .section-video-full video { width: 100%; height: auto; display: block; max-height: 640px; }
@@ -2593,7 +2633,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: block;
 }
 .result-video-label {
@@ -2618,7 +2657,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: block;
 }
 .feature-thumbs {
@@ -2628,7 +2666,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
 }
 .feature-thumb {
   padding: 0;
-  border: 1px solid var(--img-border);
   background: none;
   cursor: pointer;
   aspect-ratio: 4 / 3;
@@ -2667,7 +2704,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   display: block;
   margin: 24px auto 12px;
   border-radius: 0;
-  border: 1px solid var(--img-border);
 }
 .figure-caption {
   text-align: center;
@@ -2688,7 +2724,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   aspect-ratio: 1 / 1;
   border-radius: 0;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2769,7 +2804,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   justify-content: center;
   overflow: hidden;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   cursor: pointer;
   text-decoration: none;
 }
@@ -2865,7 +2899,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   width: 100%;
   overflow: hidden;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
 }
 .mb-item .making-thumb {
   width: 100%;
@@ -2907,7 +2940,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   margin-bottom: 12px;
   break-inside: avoid;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
@@ -3072,7 +3104,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   object-fit: cover;
   display: block;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
 }
 .ap-card-placeholder {
   display: flex;
@@ -3107,7 +3138,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   margin-bottom: 14px;
   break-inside: avoid;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
 }
 .ap-video-row {
   display: flex;
@@ -3138,7 +3168,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   object-fit: cover;
   display: block;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
 }
 @media (max-width: 900px) {
   .ap-grid-rows { grid-template-columns: repeat(3, 1fr); }
@@ -3153,7 +3182,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   object-fit: cover;
   display: block;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
 }
 @media (max-width: 640px) {
   .ap-row { flex-direction: column; }
@@ -3170,7 +3198,6 @@ body.wardrobe-page h3.role-sub-title:first-of-type {
   object-fit: cover;
   display: block;
   background: var(--img-bg);
-  border: 1px solid var(--img-border);
 }
 @media (max-width: 640px) {
   .ap-grid-3 { grid-template-columns: 1fr; }

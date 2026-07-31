@@ -10,7 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Instrument+Serif:ital@1&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="projects-page">
+  <div class="card-bg" id="cardBg">
+    <video id="cardBgVideo" muted loop playsinline></video>
+    <img id="cardBgImg" alt="">
+  </div>
+  <div class="custom-cursor" id="customCursor"></div>
+
   <nav class="site-nav">
     <div class="site-nav-inner">
       <a class="nav-name" href="projects.html">Hyebin Seo</a>
@@ -30,8 +36,8 @@
         <div class="projects-hero-photo"><img src="images/HyebinSeo.png" alt="Hyebin Seo"></div>
         <p class="hero-signature hero-signature-right" aria-hidden="true">Ship it!</p>
       </div>
-      <p class="projects-hero-bio i18n-ko">미디어아트를 전공한 배경 덕분에, 해결하고 싶은 문제를 기술로 전달하는 법을 익혔습니다. 특히 XR과 AI를 <span class="hero-bio-link" data-preview="images/HyebinSeoresearcher.png" data-preview-type="image" data-preview-size="lg">연구하고</span> 개발하는 사람으로서, 일관되고 빠른 프로덕션을 위한 <a class="hero-bio-link" href="ai-production.html" data-preview="images/wardrobe/cinemaoriginal.mp4" data-preview-type="video">파이프라인</a>을 만드는 걸 정말 좋아합니다. <a class="hero-bio-link" href="storagechat.html" data-preview="images/mmca/mmcamain.MP4" data-preview-type="video">국립현대미술관</a>, <a class="hero-bio-link" href="gongronji.html" data-preview="images/gongronji/gongronjimain.png" data-preview-type="image">NGO</a>, <a class="hero-bio-link" href="clap-your-hands.html" data-preview="images/clapyourhandifyoubelieve/antonmain.MP4" data-preview-type="video">지역 업체</a>들과 어떻게 작업했는지 궁금하다면, 포트폴리오를 계속 살펴봐주세요!</p>
-      <p class="projects-hero-bio i18n-en">Background from Media Art brought me to use technology to convey the message that I want to solve a problem. Especially as a <span class="hero-bio-link" data-preview="images/HyebinSeoresearcher.png" data-preview-type="image" data-preview-size="lg">researcher</span> and developer of XR and AI, I love [<span id="heartEmoji">🖤</span>] making <a class="hero-bio-link" href="ai-production.html" data-preview="images/wardrobe/cinemaoriginal.mp4" data-preview-type="video">pipeline</a> for consistent and fast production process. Wanna know how I've worked with <a class="hero-bio-link" href="storagechat.html" data-preview="images/mmca/mmcamain.MP4" data-preview-type="video">National Museum</a>, <a class="hero-bio-link" href="gongronji.html" data-preview="images/gongronji/gongronjimain.png" data-preview-type="image">NGOs</a>, <a class="hero-bio-link" href="clap-your-hands.html" data-preview="images/clapyourhandifyoubelieve/antonmain.MP4" data-preview-type="video">local businesses</a>? Then check out my portfolio below!</p>
+      <p class="projects-hero-bio i18n-ko">미디어아트를 전공한 배경 덕분에, 기술로 문제를 해결하고 메시지를 전달하는 법을 배웠습니다. XR과 AI를 <span class="hero-bio-link" data-preview="images/HyebinSeoresearcher.png" data-preview-type="image" data-preview-size="lg">연구하고</span> 개발하는 사람으로서, 빠르고 일관된 창작 워크플로우를 가능하게 하는 <a class="hero-bio-link" href="ai-production.html" data-preview="images/wardrobe/cinemaoriginal.mp4" data-preview-type="video">파이프라인</a>을 만드는 걸 정말 좋아합니다. <a class="hero-bio-link" href="storagechat.html" data-preview="images/mmca/mmcamain.MP4" data-preview-type="video">국립현대미술관</a>, <a class="hero-bio-link" href="gongronji.html" data-preview="images/gongronji/gongronjimain.png" data-preview-type="image">NGO</a>, <a class="hero-bio-link" href="clap-your-hands.html" data-preview="images/clapyourhandifyoubelieve/antonmain.MP4" data-preview-type="video">지역 업체</a>들과 어떻게 협업했는지 궁금하다면, 포트폴리오를 확인해보세요!</p>
+      <p class="projects-hero-bio i18n-en">My background in Media Art taught me how to solve problems and convey a message with technology. As an XR and AI <span class="hero-bio-link" data-preview="images/HyebinSeoresearcher.png" data-preview-type="image" data-preview-size="lg">researcher</span> and developer, I <span id="heartEmoji">🖤</span> love building production <a class="hero-bio-link" href="ai-production.html" data-preview="images/wardrobe/cinemaoriginal.mp4" data-preview-type="video">pipelines</a> that enable fast, consistent creative workflows. Curious how I've collaborated with a <a class="hero-bio-link" href="storagechat.html" data-preview="images/mmca/mmcamain.MP4" data-preview-type="video">national museum</a>, <a class="hero-bio-link" href="gongronji.html" data-preview="images/gongronji/gongronjimain.png" data-preview-type="image">NGOs</a>, and <a class="hero-bio-link" href="clap-your-hands.html" data-preview="images/clapyourhandifyoubelieve/antonmain.MP4" data-preview-type="video">local businesses</a>? Check out my portfolio!</p>
       <div class="projects-hero-scroll"><img src="images/arrow.png" alt=""></div>
     </div>
 
@@ -241,6 +247,7 @@
     var siteNav = document.querySelector('.site-nav');
     var navTextEls = document.querySelectorAll('.nav-name, .nav-links a');
     var heartEmoji = document.getElementById('heartEmoji');
+    var customCursor = document.getElementById('customCursor');
 
     function updateHeroFade() {
       if (!heroSection) return;
@@ -257,16 +264,63 @@
         el.style.borderBottomColor = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
       });
       if (heroScrollArrow) heroScrollArrow.style.filter = 'invert(' + (1 - progress) + ')';
-      if (siteNav) siteNav.style.backgroundColor = 'rgba(255, 255, 255, ' + progress + ')';
       navTextEls.forEach(function (el) {
         el.style.color = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
       });
       if (heartEmoji) heartEmoji.textContent = progress < 0.5 ? '🤍' : '🖤';
+      var lineColor = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
+      document.documentElement.style.setProperty('--scroll-line', lineColor);
+      if (customCursor) customCursor.style.borderColor = lineColor;
     }
 
     updateHeroFade();
     window.addEventListener('scroll', updateHeroFade, { passive: true });
     window.addEventListener('resize', updateHeroFade);
+
+    if (customCursor) {
+      window.addEventListener('mousemove', function (e) {
+        customCursor.style.left = e.clientX + 'px';
+        customCursor.style.top = e.clientY + 'px';
+      });
+      document.querySelectorAll('a, button').forEach(function (el) {
+        el.addEventListener('mouseenter', function () {
+          customCursor.style.width = '34px';
+          customCursor.style.height = '34px';
+        });
+        el.addEventListener('mouseleave', function () {
+          customCursor.style.width = '22px';
+          customCursor.style.height = '22px';
+        });
+      });
+    }
+
+    var cardBg = document.getElementById('cardBg');
+    var cardBgVideo = document.getElementById('cardBgVideo');
+    var cardBgImg = document.getElementById('cardBgImg');
+
+    document.querySelectorAll('#grid .card').forEach(function (card) {
+      card.addEventListener('mouseenter', function () {
+        var media = card.querySelector('.thumb img, .thumb video');
+        if (!media || !cardBg) return;
+        if (media.tagName === 'VIDEO') {
+          cardBgVideo.src = media.currentSrc || media.getAttribute('src');
+          cardBgVideo.style.display = 'block';
+          cardBgImg.style.display = 'none';
+          cardBgVideo.currentTime = 0;
+          cardBgVideo.play().catch(function () {});
+        } else {
+          cardBgImg.src = media.currentSrc || media.getAttribute('src');
+          cardBgImg.style.display = 'block';
+          cardBgVideo.style.display = 'none';
+          cardBgVideo.pause();
+        }
+        cardBg.classList.add('show');
+      });
+      card.addEventListener('mouseleave', function () {
+        cardBg.classList.remove('show');
+        cardBgVideo.pause();
+      });
+    });
 
     var linkPreview = document.getElementById('linkPreview');
     var linkPreviewVideo = document.getElementById('linkPreviewVideo');
