@@ -60,12 +60,12 @@ body.projects-page .link-preview {
   z-index: 999;
 }
 
-/* ---------- custom cursor ---------- */
-body.projects-page { cursor: none; }
-body.projects-page a,
-body.projects-page button,
-body.projects-page .card,
-body.projects-page .filter-btn { cursor: none; }
+/* ---------- custom cursor (site-wide, except george.html's game) ---------- */
+body:not(.george-page) { cursor: none; }
+body:not(.george-page) a,
+body:not(.george-page) button,
+body:not(.george-page) .card,
+body:not(.george-page) .filter-btn { cursor: none; }
 .custom-cursor {
   position: fixed;
   top: 0;
@@ -81,11 +81,11 @@ body.projects-page .filter-btn { cursor: none; }
   transition: border-color 0.15s ease-out, width 0.15s ease, height 0.15s ease;
 }
 @media (max-width: 720px) {
-  body.projects-page { cursor: auto; }
-  body.projects-page a,
-  body.projects-page button,
-  body.projects-page .card,
-  body.projects-page .filter-btn { cursor: pointer; }
+  body:not(.george-page) { cursor: auto; }
+  body:not(.george-page) a,
+  body:not(.george-page) button,
+  body:not(.george-page) .card,
+  body:not(.george-page) .filter-btn { cursor: pointer; }
   .custom-cursor { display: none; }
 }
 
