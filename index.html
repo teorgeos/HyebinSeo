@@ -5,19 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects · Hyebin Seo</title>
 <script>document.documentElement.setAttribute('data-lang', localStorage.getItem('lang') || 'en');</script>
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.addEventListener('load', function () { window.scrollTo(0, 0); });
+  window.addEventListener('pageshow', function () { window.scrollTo(0, 0); });
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Instrument+Serif:ital@1&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body class="projects-page">
+  <section class="binoculars-intro" id="binocularsIntro">
+    <div class="binoculars-stage">
+      <img class="binoculars-photo" id="binocularsPhotoBase" src="images/Desert.png" alt="Desert dunes">
+      <img class="binoculars-photo binoculars-photo-reveal" id="binocularsPhotoReveal" src="images/dessert.png" alt="Looking through binoculars at the desert">
+      <div class="binoculars-overlay" id="binocularsOverlay"></div>
+      <div class="binoculars-text" id="binocularsText">
+        <p class="binoculars-subtitle">Hyebin Seo's Portfolio</p>
+        <p class="binoculars-title">WAY TO<br>HEAVEN</p>
+      </div>
+      <div class="desert-hero-text" id="desertHeroText">
+        <div class="desert-hero-headline-wrap" id="desertHeroHeadlineWrap">
+          <p class="desert-hero-headline" id="desertHeroHeadline">Art Director who uses AI and codes</p>
+        </div>
+        <div class="desert-hero-bio-wrap" id="desertHeroBioWrap">
+          <p class="desert-hero-bio i18n-ko"><span class="bio-line" data-bio-line="1">미디어아트를 전공한 배경 덕분에, 기술로 문제를 해결하고 메시지를 전달하는 법을 배웠습니다.</span><span class="bio-line" data-bio-line="2">XR과 AI를 <span class="hero-bio-link" data-preview="images/HyebinSeoresearcher.png" data-preview-type="image" data-preview-size="lg">연구하고</span> 개발하는 사람으로서, 빠르고 일관된 창작 워크플로우를 가능하게 하는 <a class="hero-bio-link" href="ai-production.html" data-preview="images/wardrobe/cinemaoriginal.mp4" data-preview-type="video">파이프라인</a>을 만드는 걸 정말 좋아합니다.</span><span class="bio-line" data-bio-line="3"><a class="hero-bio-link" href="storagechat.html" data-preview="images/mmca/mmcamain.MP4" data-preview-type="video">국립현대미술관</a>, <a class="hero-bio-link" href="gongronji.html" data-preview="images/gongronji/gongronjimain.png" data-preview-type="image">NGO</a>, <a class="hero-bio-link" href="clap-your-hands.html" data-preview="images/clapyourhandifyoubelieve/antonmain.MP4" data-preview-type="video">지역 업체</a>들과 어떻게 협업했는지 궁금하다면,</span><span class="bio-line" data-bio-line="4"><span class="hero-scroll-note">스크롤해서 내 포트폴리오 봐봐!</span></span></p>
+          <p class="desert-hero-bio i18n-en"><span class="bio-line" data-bio-line="1">My background in Media Art taught me how to solve problems and convey a message with technology.</span><span class="bio-line" data-bio-line="2">As an XR and AI <span class="hero-bio-link" data-preview="images/HyebinSeoresearcher.png" data-preview-type="image" data-preview-size="lg">researcher</span> and developer, I 🤍 love building production <a class="hero-bio-link" href="ai-production.html" data-preview="images/wardrobe/cinemaoriginal.mp4" data-preview-type="video">pipelines</a> that enable fast, consistent creative workflows.</span><span class="bio-line" data-bio-line="3">Curious how I've collaborated with a <a class="hero-bio-link" href="storagechat.html" data-preview="images/mmca/mmcamain.MP4" data-preview-type="video">national museum</a>, <a class="hero-bio-link" href="gongronji.html" data-preview="images/gongronji/gongronjimain.png" data-preview-type="image">NGOs</a>, and <a class="hero-bio-link" href="clap-your-hands.html" data-preview="images/clapyourhandifyoubelieve/antonmain.MP4" data-preview-type="video">local businesses</a>?</span><span class="bio-line" data-bio-line="4"><span class="hero-scroll-note">Scroll down to see my portfolio!</span></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="card-bg" id="cardBg">
     <video id="cardBgVideo" muted loop playsinline></video>
     <img id="cardBgImg" alt="">
   </div>
   <div class="custom-cursor" id="customCursor"></div>
 
-  <nav class="site-nav">
+  <nav class="site-nav is-pinned-preview" id="siteNav">
     <div class="site-nav-inner">
       <a class="nav-name" href="index.html">Hyebin Seo</a>
       <div class="nav-links">
@@ -28,19 +54,7 @@
     </div>
   </nav>
 
-  <div class="wrap projects-wrap">
-    <div class="projects-hero">
-      <p class="projects-hero-headline">Art Director who uses AI and codes</p>
-      <div class="projects-hero-photo-wrap">
-        <p class="hero-signature hero-signature-left" aria-hidden="true">I know how to</p>
-        <div class="projects-hero-photo"><img src="images/HyebinSeo.png" alt="Hyebin Seo"></div>
-        <p class="hero-signature hero-signature-right" aria-hidden="true">Ship it!</p>
-      </div>
-      <p class="projects-hero-bio i18n-ko">미디어아트를 전공한 배경 덕분에, 기술로 문제를 해결하고 메시지를 전달하는 법을 배웠습니다. XR과 AI를 <span class="hero-bio-link" data-preview="images/HyebinSeoresearcher.png" data-preview-type="image" data-preview-size="lg">연구하고</span> 개발하는 사람으로서, 빠르고 일관된 창작 워크플로우를 가능하게 하는 <a class="hero-bio-link" href="ai-production.html" data-preview="images/wardrobe/cinemaoriginal.mp4" data-preview-type="video">파이프라인</a>을 만드는 걸 정말 좋아합니다. <a class="hero-bio-link" href="storagechat.html" data-preview="images/mmca/mmcamain.MP4" data-preview-type="video">국립현대미술관</a>, <a class="hero-bio-link" href="gongronji.html" data-preview="images/gongronji/gongronjimain.png" data-preview-type="image">NGO</a>, <a class="hero-bio-link" href="clap-your-hands.html" data-preview="images/clapyourhandifyoubelieve/antonmain.MP4" data-preview-type="video">지역 업체</a>들과 어떻게 협업했는지 궁금하다면, 포트폴리오를 확인해보세요!</p>
-      <p class="projects-hero-bio i18n-en">My background in Media Art taught me how to solve problems and convey a message with technology. As an XR and AI <span class="hero-bio-link" data-preview="images/HyebinSeoresearcher.png" data-preview-type="image" data-preview-size="lg">researcher</span> and developer, I <span id="heartEmoji">🖤</span> love building production <a class="hero-bio-link" href="ai-production.html" data-preview="images/wardrobe/cinemaoriginal.mp4" data-preview-type="video">pipelines</a> that enable fast, consistent creative workflows. Curious how I've collaborated with a <a class="hero-bio-link" href="storagechat.html" data-preview="images/mmca/mmcamain.MP4" data-preview-type="video">national museum</a>, <a class="hero-bio-link" href="gongronji.html" data-preview="images/gongronji/gongronjimain.png" data-preview-type="image">NGOs</a>, and <a class="hero-bio-link" href="clap-your-hands.html" data-preview="images/clapyourhandifyoubelieve/antonmain.MP4" data-preview-type="video">local businesses</a>? Check out my portfolio!</p>
-      <div class="projects-hero-scroll"><img src="images/arrow.png" alt=""></div>
-    </div>
-
+  <div class="wrap projects-wrap is-pinned-preview" id="projectsWrap">
     <div class="filters" id="filters">
       <button class="filter-btn active" data-filter="all">All <span class="count"></span></button>
       <button class="filter-btn" data-filter="ai-production">AI Production <span class="count"></span></button>
@@ -240,43 +254,6 @@
   </div>
 
   <script>
-    var heroSection = document.querySelector('.projects-hero');
-    var heroTextEls = document.querySelectorAll('.projects-hero-headline, .projects-hero-bio, .hero-signature');
-    var heroLinkEls = document.querySelectorAll('.hero-bio-link');
-    var heroScrollArrow = document.querySelector('.projects-hero-scroll img');
-    var siteNav = document.querySelector('.site-nav');
-    var navTextEls = document.querySelectorAll('.nav-name, .nav-links a');
-    var heartEmoji = document.getElementById('heartEmoji');
-    var customCursor = document.getElementById('customCursor');
-
-    function updateHeroFade() {
-      if (!heroSection) return;
-      var rect = heroSection.getBoundingClientRect();
-      var progress = Math.min(1, Math.max(0, (0 - rect.top) / rect.height));
-      var bgVal = Math.round(progress * 255);
-      var textVal = Math.round((1 - progress) * 255);
-      document.body.style.backgroundColor = 'rgb(' + bgVal + ',' + bgVal + ',' + bgVal + ')';
-      heroTextEls.forEach(function (el) {
-        el.style.color = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
-      });
-      heroLinkEls.forEach(function (el) {
-        el.style.color = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
-        el.style.borderBottomColor = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
-      });
-      if (heroScrollArrow) heroScrollArrow.style.filter = 'invert(' + (1 - progress) + ')';
-      navTextEls.forEach(function (el) {
-        el.style.color = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
-      });
-      if (heartEmoji) heartEmoji.textContent = progress < 0.5 ? '🤍' : '🖤';
-      var lineColor = 'rgb(' + textVal + ',' + textVal + ',' + textVal + ')';
-      document.documentElement.style.setProperty('--scroll-line', lineColor);
-      if (customCursor) customCursor.style.borderColor = lineColor;
-    }
-
-    updateHeroFade();
-    window.addEventListener('scroll', updateHeroFade, { passive: true });
-    window.addEventListener('resize', updateHeroFade);
-
     var cardBg = document.getElementById('cardBg');
     var cardBgVideo = document.getElementById('cardBgVideo');
     var cardBgImg = document.getElementById('cardBgImg');
@@ -434,6 +411,7 @@
       });
     }
   </script>
+  <script src="binoculars.js"></script>
   <script src="cursor.js"></script>
   <script src="lang.js"></script>
 </body>
