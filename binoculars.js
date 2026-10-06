@@ -16,6 +16,7 @@
   var siteNav = document.querySelector('.site-nav');
   var projectsWrap = document.querySelector('.projects-wrap');
   var filters = document.getElementById('filters');
+  var scrollHint = document.getElementById('scrollHint');
   if (!overlay) return;
 
   var pinned = true;
@@ -109,6 +110,9 @@
     if (projectsWrap) projectsWrap.style.opacity = String(p3);
     if (filters) filters.style.opacity = String(p3);
 
+    // "Keep scrolling down" hint stays until the nav/grid start arriving, then fades out with them
+    if (scrollHint) scrollHint.style.opacity = String(1 - p3);
+
     // Headline + bio fade out completely once the photo settles and the reading pause ends,
     // finishing well before the photo itself starts sliding away
     var pTextOut = clamp01((scrolledVh - TEXT_FADEOUT_START) / (TEXT_FADEOUT_END - TEXT_FADEOUT_START));
@@ -149,6 +153,23 @@
     measure();
     update();
   }
+
+  // "Projects" nav link (and #projects arrivals from other pages) jump straight to the project
+  // list, i.e. just past the end of the intro, instead of back to the top of the intro.
+  function goToProjects() {
+    window.scrollTo(0, intro.offsetHeight);
+  }
+  document.querySelectorAll('.nav-links a[href="index.html#projects"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      goToProjects();
+    });
+  });
+  function handleHash() {
+    if (location.hash === '#projects') goToProjects();
+  }
+  window.addEventListener('load', handleHash);
+  window.addEventListener('pageshow', handleHash);
 
   measure();
   window.addEventListener('scroll', update, { passive: true });

@@ -7,8 +7,8 @@
 <script>document.documentElement.setAttribute('data-lang', localStorage.getItem('lang') || 'en');</script>
 <script>
   if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
-  window.addEventListener('load', function () { window.scrollTo(0, 0); });
-  window.addEventListener('pageshow', function () { window.scrollTo(0, 0); });
+  window.addEventListener('load', function () { if (location.hash !== '#projects') window.scrollTo(0, 0); });
+  window.addEventListener('pageshow', function () { if (location.hash !== '#projects') window.scrollTo(0, 0); });
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +24,10 @@
       <div class="binoculars-text" id="binocularsText">
         <p class="binoculars-subtitle">Hyebin Seo's Portfolio</p>
         <p class="binoculars-title">WAY TO<br>HEAVEN</p>
+      </div>
+      <div class="scroll-hint" id="scrollHint">
+        <p class="scroll-hint-text"><span class="i18n-ko">계속 스크롤해 보세요</span><span class="i18n-en">Keep scrolling down</span></p>
+        <span class="scroll-hint-icon"><span class="scroll-hint-dot"></span></span>
       </div>
       <div class="desert-hero-text" id="desertHeroText">
         <div class="desert-hero-headline-wrap" id="desertHeroHeadlineWrap">
@@ -47,7 +51,7 @@
     <div class="site-nav-inner">
       <a class="nav-name" href="index.html">Hyebin Seo</a>
       <div class="nav-links">
-        <a href="index.html" class="active">Projects</a>
+        <a href="index.html#projects" class="active">Projects</a>
         <a href="ai-production.html">AI Production</a>
         <a href="making-things.html">I make [&nbsp;&nbsp;&nbsp;???&nbsp;&nbsp;&nbsp;]</a>
       </div>
